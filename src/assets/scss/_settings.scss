@@ -1,0 +1,146 @@
+//  Foundation for Emails Settings
+//  ------------------------------
+//
+//  Table of Contents:
+//
+//   1. Global
+//   2. Grid
+//   3. Block Grid
+//   4. Typography
+//   5. Button
+//   6. Callout
+//   7. Menu
+//   8. Thumbnail
+
+
+// 1. Global
+// ---------
+
+$primary-color: #14c393;
+$light-gray: #f9fafc;
+$medium-gray: #7a859e;
+$dark-gray: #7a859e;
+$black: #181b2b;
+$white: #ffffff;
+$global-width: 492px;
+$global-width-small: 95%;
+$global-gutter: 16px;
+$body-background: $light-gray;
+$container-background: $white;
+$global-padding: 16px;
+$global-margin: 16px;
+$global-radius: 4px;
+$global-rounded: 500px;
+$global-breakpoint: $global-width + $global-gutter;
+
+/* Large only */
+@media only screen and (min-width: #{$global-breakpoint}) {
+	.container {
+		padding-left: 60px !important;
+		padding-right: 60px !important;
+	}
+
+	.container.footer {
+		width: 476px !important;
+	}
+}
+
+// 2. Grid
+// -------
+
+$grid-column-count: 12;
+$column-padding-bottom: 6px;
+$container-radius: 8px;
+
+// 3. Block Grid
+// -------------
+
+$block-grid-max: 8;
+$block-grid-gutter: $global-gutter;
+
+// 4. Typography
+// -------------
+
+$global-font-color: $black;
+$body-font-family: '-apple-system', 'roboto', Helvetica, Arial, sans-serif;
+$global-font-weight: normal;
+$header-color: inherit;
+$global-line-height: 1.5;
+$global-font-size: 16px;
+$body-line-height: $global-line-height;
+$header-font-family: $body-font-family;
+$header-font-weight: $global-font-weight;
+$h1-font-size: 52px;
+$h2-font-size: 38px;
+$h3-font-size: 26px;
+$h4-font-size: 22px;
+$header-margin-bottom: 16px;
+$paragraph-margin-bottom: 12px;
+$small-font-size: 100%;
+$small-font-color: $medium-gray;
+$lead-font-size: $global-font-size * 1.25;
+$lead-line-height: 1.6;
+$text-padding: 10px;
+$subheader-lineheight: 1.4;
+$subheader-color: $dark-gray;
+$subheader-font-weight: $global-font-weight;
+$subheader-margin-top: 4px;
+$subheader-margin-bottom: 8px;
+$hr-width: $global-width;
+$hr-border: 1px solid $black;
+$hr-margin: 20px auto;
+$anchor-text-decoration: none;
+$anchor-color: $primary-color;
+$anchor-color-visited: $anchor-color;
+$anchor-color-hover: darken($primary-color, 7%);
+$anchor-color-active: $anchor-color-hover;
+$stat-font-size: 40px;
+
+
+/* Small only */
+@media only screen and (max-width: #{$global-breakpoint}) {
+	.small {
+		font-size: 80% !important;
+	}
+}
+
+// 5. Button
+// ---------
+
+$button-padding: (default: 8px 20px 8px 20px);
+$button-font-size: (default: 16px);
+$button-color: $white;
+$button-color-alt: $medium-gray;
+$button-font-weight: normal;
+$button-margin: 0 0 32px 0;
+$button-background: $primary-color;
+$button-border: 0px solid $button-background;
+$button-radius: $global-radius;
+$button-rounded: $global-rounded;
+
+// 6. Callout
+// ----------
+
+// $callout-background: $white;
+// $callout-background-fade: 85%;
+// $callout-padding: 10px;
+// $callout-margin-bottom: $global-margin;
+// $callout-border: 1px solid darken($callout-background, 20%);
+
+// 7. Menu
+// -------
+
+$menu-item-padding: 0;
+$menu-item-gutter: 0;
+$menu-item-color: $black;
+
+// 8. Thumbnail
+// ------------
+
+$thumbnail-border: solid 4px $white;
+$thumbnail-margin-bottom: $global-margin;
+$thumbnail-shadow: 0 0 0 1px rgba($black, 0.2);
+$thumbnail-shadow-hover: 0 0 6px 1px rgba($primary-color, 0.5);
+$thumbnail-transition: box-shadow 200ms ease-out;
+$thumbnail-radius: $global-radius;
+

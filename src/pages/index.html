@@ -1,0 +1,66 @@
+---
+layout: index-layout
+subject: Have you tried Santiment watchlists?
+description: Watchlists let you stay up to date on the coins you care about...
+descript: Watchlists let you stay up to date on the coins you care about, be it your current portfolio, potential trade targets or your favorite projects. Keep them private or share your watchlists with anyone. Need inspiration? Copy others’ public watchlists with a single click!
+image-url: https://api-stage.santiment.net/images/emails/
+---
+
+{{>header}}
+
+<container class="radius">
+
+  <spacer size="26"></spacer>
+
+  <row>
+    <columns small="12">
+
+      <center>
+        <img src="{{image-url}}news.png" alt="" />
+      </center>
+
+      <spacer size="30"></spacer>
+
+      <h3>{{subject}}</h3>
+
+      <p>
+        {{descript}}
+      </p>
+
+      <p>
+        Want to know when to get out? You can now set up alerts whenever one of&nbsp;syour watchlist coins appears in&nbsp;our daily
+        <a href="https://app.santiment.net/labs/trends">Trending Words</a>, which can often signal a&nbsp;local top.
+      </p>
+
+      <p style='font-weight: bold'>Use watchlists for:</p>
+
+      <row>
+        <columns large='3' vailgn='middle'>
+          <img src="{{image-url}}list-item.png" alt="" class='float-left list-item' />
+          <span>Portfolio</span>
+        </columns>
+        <columns large='4' vailgn='middle'>
+          <img src="{{image-url}}list-item.png" alt="" class='float-left list-item' />
+          <span>Asset monitoring</span>
+        </columns>
+        <columns large='4' vailgn='middle'>
+          <img src="{{image-url}}list-item.png" alt="" class='float-left list-item' />
+          <span>Trading alerts</span>
+        </columns>
+      </row>
+
+      <spacer size="10"></spacer>
+
+      <p>To get you started, check out our guide to getting the most out&nbsp;of Santiment Watchlists!</p>
+
+      <spacer size="12"></spacer>
+
+      <button class="expand radius" href="https://help.santiment.net/en/articles/2672482-categories-and-watchlists">
+        Read the quide
+      </button>
+
+    </columns>
+  </row>
+</container>
+{{>footer}}
+
