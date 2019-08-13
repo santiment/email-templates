@@ -1,0 +1,41 @@
+---
+layout: index-layout
+subject: Thanks to be with us!
+description: We've enjoyed celebrating our 2th birthday with you. Here's a final reminder, sent with gratitude, so you don't miss out on a great opportunity to save a lot on Premium.
+image-url: https://api-stage.santiment.net/images/emails/
+---
+
+{{>header}}
+
+<container class="radius">
+
+  <spacer size="26"></spacer>
+
+  <row>
+    <columns small="12">
+
+      <center>
+
+      <h3 mc:edit="header" class='text-center'>{{subject}}</h3>
+
+      <p mc:edit="description" class='text-center'>
+      {{description}}
+      <br/>
+      <br/>
+      Upgrade before midnight tonight (April&nbsp;10) to get <b>$90 off an&nbsp;annual plan</b> OR <b>$20 off a&nbsp;monthly plan.</b>
+      </p>
+
+      <spacer size="12"></spacer>
+
+      <button class="radius" href="https://help.santiment.net/en/articles/2672482-categories-and-watchlists">
+        <span mc:edit="button_text">Learn more</span>
+      </button>
+
+      {{>regards-center}}
+      </center>
+
+    </columns>
+  </row>
+</container>
+{{>footer}}
+

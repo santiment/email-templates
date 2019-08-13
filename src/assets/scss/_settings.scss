@@ -16,13 +16,15 @@
 // 1. Global
 // ---------
 
-$primary-color: #14c393;
+$primary-color: #14c393; // --jungle-green
+// $primary-color: #5275ff; // --dodger-blue FOR NEURO THEME
+// $primary-color: #1aa168; // --sheets FOR SHEETS THEME
 $light-gray: #f9fafc;
-$medium-gray: #7a859e;
-$dark-gray: #7a859e;
-$black: #181b2b;
-$white: #ffffff;
-$global-width: 492px;
+$medium-gray: #7a859e; // --waterloo
+$dark-gray: #7a859e; // --waterloo
+$black: #181b2b; // --mirage
+$white: #ffffff; // --white
+$global-width: 524px;
 $global-width-small: 95%;
 $global-gutter: 16px;
 $body-background: $light-gray;
@@ -36,12 +38,12 @@ $global-breakpoint: $global-width + $global-gutter;
 /* Large only */
 @media only screen and (min-width: #{$global-breakpoint}) {
 	.container {
-		padding-left: 60px !important;
-		padding-right: 60px !important;
+		padding-left: 44px !important;
+		padding-right: 44px !important;
 	}
 
 	.container.footer {
-		width: 476px !important;
+		width: 510px !important;
 	}
 }
 

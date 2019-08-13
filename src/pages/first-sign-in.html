@@ -1,8 +1,7 @@
 ---
 layout: index-layout
 subject: Thanks for signing up!
-description: It's nice to have you on board, together we are...
-descript: It's nice to have you on board, together we are crossing the sea from centralized to decentralized world, from uncertainty to clarity, from too much noise to the "I get only what I need when I need".
+description: It's nice to have you on board, together we are crossing the sea from centralized to decentralized world, from uncertainty to clarity, from too much noise to the "I get only what I need when I need".
 image-url: https://api-stage.santiment.net/images/emails/
 ---
 
@@ -21,27 +20,23 @@ image-url: https://api-stage.santiment.net/images/emails/
 
       <spacer size="30"></spacer>
 
-      <h3>{{subject}}</h3>
+      {{>title-and-desc}}
 
-      <p>
-        {{descript}}
-      </p>
-
-      <p>
+      <p mc:edit="text_2">
         That's pretty long way to get to the final destination. But as every big journey, it starts with the first step.Which you've just made.
       </p>
 
       <spacer size="8"></spacer>
 
-      <button class="expand radius" href="https://app.santiment.net/">
-        Sign in to Santiment
+      <button class="expand radius" href="http://|login_link|">
+        <span mc:edit="button_text">Sign in to Santiment</span>
       </button>
 
-      <p>Please connect Metamask to open more possibilities.</p>
+      <p mc:edit="text_3">Please <a href="https://app.santiment.net/account#connections">connect Metamask</a> to open more possibilities.</p>
 
-      <p>Try to create your own watchlist to track and store the assets you are interested in one place.</p>
+      <p mc:edit="text_4">Try to create your own watchlist to track and store the assets you are interested in one place.</p>
 
-      <p>You may find the Resources page helpful if you just want to explore our product more with no development required.</p>
+      <p mc:edit="text_5">You may find the <a href="https://help.santiment.net/en/">Knowledge base page</a> helpful if you just want to explore our product more with no development required.</p>
 
       <spacer size="12"></spacer>
 
