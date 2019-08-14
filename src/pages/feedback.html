@@ -1,0 +1,52 @@
+---
+layout: index-layout
+subject: Hi again! Kelvin from Santiment here 👋
+description: Watchlists let you stay up to date on the coins you care about, be it your current portfolio, potential trade targets or your favorite projects. Keep them private or share your watchlists with anyone. Need inspiration? Copy others’ public watchlists with a single click!
+image-url: https://api-stage.santiment.net/images/emails/
+---
+
+{{>header}}
+
+<container class="radius">
+
+  <spacer size="26"></spacer>
+
+  <row>
+    <columns small="12">
+
+      <center>
+        <img src="{{image-url}}news.png" alt="" />
+      </center>
+
+      <spacer size="30"></spacer>
+
+      <h4 mc:edit="header" style='font-weight: normal'>{{subject}}</h4>
+
+      <p mc:edit="description">We’d love to&nbsp;pick your brain about your Sanbase experience - and gift you <b>a free month of&nbsp;our <a href="https://santiment.net/sangraphs/" target="_blank">Advanced Metrics</a></b> (regular price of&nbsp;$540) as&nbsp;a&nbsp;‘thank you’.
+      </p>
+
+
+      <p mc:edit="text_1">
+        We just rolled out v2.0 of Sangraphs Premium, with&nbsp;more data and <b>brand new metrics</b> like <b>Maximal Mean Age</b> and <b>MVRV Long/Short Difference</b> - both very promising leading indicators.<br>
+                                    <br>Sign up for a&nbsp;short call about Sanbase and we’ll send you a&nbsp;1 month access to&nbsp;our most valuable crypto dashboards (with&nbsp;detailed tutorials) for&nbsp;free!<br>
+      </p>
+
+
+      <button
+        class="expand radius"
+        href="https://calendly.com/santiment-team/sanbasefeedback"
+        target='_blank'
+      >
+        <span mc:edit="button_text">Sign up</span>
+
+      </button>
+        <p mc:edit="regards">
+          Talk to you soon!<br>
+          <br>Kelvin,<br>Santiment
+        </p>
+
+    </columns>
+  </row>
+</container>
+{{>footer}}
+

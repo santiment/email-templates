@@ -2,22 +2,19 @@
     <spacer size="24"></spacer>
 
     <row>
-      <columns small='12' large='7'>
-        <a href="*|UNSUB|*" style="padding-right: 16px"><small class='small'>Unsubscribe</small></a>
-        <a href="*|UPDATE_PROFILE|*"><small class='small'>Email preferences</small></a>
-      </columns>
-      <columns small='12' large='5' vailgn='center'>
-        <p style='margin: 0; Margin: 0' class='text-right small-text-left'>
-        <a href="https://medium.com/santiment">
+    {{>preferences}}
+    <columns small='12' large='5' vailgn='center'>
+        <p style='margin: 0; Margin: 0' class='small-text-left'>
+        <a href="https://medium.com/santiment" target='_blank'>
           <img style="padding-right: 24px" class='social' src="{{image-url}}social-medium.png" alt='' />
         </a>
-        <a href="https://discord.gg/6fMxk82">
+        <a href="https://discord.gg/6fMxk82" target='_blank'>
           <img style="padding-right: 24px" class='social' src="{{image-url}}social-discord.png" alt='' />
         </a>
-        <a href="https://twitter.com/santimentfeed">
+        <a href="https://twitter.com/santimentfeed" target='_blank'>
           <img style="padding-right: 24px" class='social' src="{{image-url}}social-twitter.png" alt='' />
         </a>
-        <a href="https://t.me/santiment_network">
+        <a href="https://t.me/santiment_network" target='_blank'>
           <img  src="{{image-url}}social-telegram.png" class='social' alt='' />
         </a>
       </p>
@@ -27,7 +24,7 @@
       <columns small="12">
       <small class='small'>
         You are receiving this email to sign in the Santiment application.
-        If&nbsp;you did not enter your email address, then you can either ignore this message or contact <a href="mailto:support@santiment.net">support@santiment.net</a> for more information.
+        If&nbsp;you did not enter your email address, then you can either ignore this message or contact <a href="mailto:support@santiment.net" target='_blank'>support@santiment.net</a> for more information.
       </small>
 
       <spacer size="12"></spacer>
@@ -38,7 +35,7 @@
       </columns>
       <columns large='4' small='12'>
         <p style='color: #7a859e; margin: 0; Margin: 0;' class='text-right small-text-left small'>
-        <a href='https://app.santiment.net/privacy-policy'><small>Terms & Privacy</small></a>
+        <a href='https://app.santiment.net/privacy-policy' target='_blank'><small>Terms & Privacy</small></a>
       </p>
       </columns>
       </row>
