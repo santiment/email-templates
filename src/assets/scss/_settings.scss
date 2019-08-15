@@ -35,11 +35,6 @@ $global-radius: 4px;
 $global-rounded: 500px;
 $global-breakpoint: $global-width + $global-gutter;
 
-a {
-  color: $primary-color;
-  text-decoration:none;
-}
-
 /* Large only */
 @media only screen and (min-width: #{$global-breakpoint}) {
 	.container {

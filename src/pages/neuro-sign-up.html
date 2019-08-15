@@ -1,0 +1,48 @@
+---
+layout: default
+subject: Thanks for signing up!
+description: It's nice to have you on board, together we are crossing the sea from centralized to decentralized world, from uncertainty to clarity, from too much noise to the "I get only what I need when I need".
+image-url: https://api-stage.santiment.net/images/emails/
+---
+
+{{>header}}
+
+<container class="radius">
+
+  <spacer size="26"></spacer>
+
+  <row>
+    <columns small="12">
+
+      <center>
+        <img src="{{image-url}}neuro_sign_up.png" alt="" />
+      </center>
+
+      <spacer size="30"></spacer>
+
+      {{>title-and-desc}}
+
+      <p mc:edit="text_2">
+        That's pretty long way to get to the final destination. But as every big journey, it starts with the first step.Which you've just made.
+      </p>
+
+      <p>
+        Your account has just been created. Click the button to sign in.
+      </p>
+
+      <spacer size="8"></spacer>
+
+      <button class="expand radius" href="*|HTML:LOGIN_LINK|*" target="_blank">
+        <span mc:edit="button_text">Sign in to Neuro</span>
+      </button>
+
+      <p mc:edit="text_5">You may find the <a href="https://help.santiment.net/en/" target="_blank">Knowledge base page</a> helpful if you just want to explore our product more with no development required.</p>
+
+      <spacer size="12"></spacer>
+
+      {{>regards}}
+    </columns>
+  </row>
+</container>
+{{>footer}}
+
