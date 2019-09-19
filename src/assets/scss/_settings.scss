@@ -47,6 +47,10 @@ $global-breakpoint: $global-width + $global-gutter;
 	}
 }
 
+.gray {
+	color: $medium-gray;
+}
+
 // 2. Grid
 // -------
 
@@ -64,7 +68,7 @@ $block-grid-gutter: $global-gutter;
 // -------------
 
 $global-font-color: $black;
-$body-font-family: '-apple-system', 'roboto', Helvetica, Arial, sans-serif;
+$body-font-family: Arial, sans-serif;
 $global-font-weight: normal;
 $header-color: inherit;
 $global-line-height: 1.5;
@@ -74,7 +78,7 @@ $header-font-family: $body-font-family;
 $header-font-weight: $global-font-weight;
 $h1-font-size: 52px;
 $h2-font-size: 38px;
-$h3-font-size: 26px;
+$h3-font-size: 28px;
 $h4-font-size: 22px;
 $header-margin-bottom: 16px;
 $paragraph-margin-bottom: 12px;
