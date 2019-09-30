@@ -1,0 +1,86 @@
+---
+layout: index-layout
+image-url: https://api-stage.santiment.net/images/emails/
+---
+
+{{>header}}
+
+<container class="radius">
+
+  <spacer size="26"></spacer>
+
+  <row>
+    <columns small="12">
+
+      <center>
+        <img src="{{image-url}}gift.png" class='gift-image' alt="" />
+
+      <spacer size="30"></spacer>
+
+      <h3 mc:edit="header" class='text-center'>Santiment - ご登録ありがとうございます-25%オフクーポン付</h3>
+
+      <p mc:edit="description" class='text-center'>
+        下記のどのプロダクトも*|HTML:DISCOUNT|*%オフになる、スペシャルオファーです！
+      <p/>
+
+      <spacer size="8"></spacer>
+
+      <row>
+        <columns large='5' vailgn='middle'>
+          <img src="{{image-url}}list-item.png" alt="" class='float-left list-item' />
+          <span mc:edit="item_1"><b>SANベース</b></span>
+          <spacer size="4"></spacer>
+          <p class='item-desc'>詳細なコイン分析、低遅延シグナル、資産ウォッチリスト用のプラットフォーム。</p>
+        </columns>
+        <columns large='1' vailgn='middle'></columns>
+        <columns large='5' vailgn='middle'>
+          <img src="{{image-url}}list-item.png" alt="" class='float-left list-item' />
+          <span mc:edit="item_2"><b>SANグラフ</b></span>
+          <spacer size="4"></spacer>
+          <p class='item-desc'>700以上の通貨の、高度なメトリックとチャート。</p>
+        </columns>
+      </row>
+
+      <row>
+        <columns large='5' vailgn='middle'>
+          <img src="{{image-url}}list-item.png" alt="" class='float-left list-item' />
+          <span mc:edit="item_3"><b>SANシート</b></span>
+          <spacer size="4"></spacer>
+          <p class='item-desc'>Satimentデータの、Googleスプレットシートプラグイン。</p>
+        </columns>
+        <columns large='1' vailgn='middle'></columns>
+        <columns large='5' vailgn='middle'>
+          <img src="{{image-url}}list-item.png" alt="" class='float-left list-item' />
+          <span mc:edit="item_4"><b>SANベースAPI</b></span>
+          <spacer size="4"></spacer>
+          <p class='item-desc'>市場で最も包括的なCrypto API。</p>
+        </columns>
+      </row>
+
+      <spacer size="4"></spacer>
+      <p class='border' />
+      <spacer size="6"></spacer>
+
+      <p class='text-center gray'>お客様のクーポンコード：</p>
+
+      <p class='gray-border'>
+        *|HTML:COUPON_CODE|*
+      </p>
+
+      <spacer size="12"></spacer>
+
+      <p class='text-center'>
+      このクーポンは、月間または年間プランお申し込み1回に限り有効です（有効期限2019年12月31日）。 こちらですべてをご参照ください。
+      </p>
+
+      <spacer size="12"></spacer>
+
+      <button class="radius" href="https://app.santiment.net/pricing" target="_blank">
+        <span mc:edit="button_text">プランを選択する</span>
+      </button>
+      </center>
+
+    </columns>
+  </row>
+</container>
+{{>footer-jp}}

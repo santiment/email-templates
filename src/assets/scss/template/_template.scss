@@ -89,6 +89,13 @@ table.button.google table td {
   height: auto !important;
 }
 
+.signal-image {
+  width: 331px !important;
+  height: auto !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
 a {
   color: #14c393;
   // color: #5275ff;
@@ -111,4 +118,17 @@ a {
 
 .item-desc{
   font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.footer a .small, .underline{
+  border-bottom: 1px solid #7A859E;
+}
+
+.signal img {
+  margin: 10px 0 0;
+  Margin: 10px 0 0;
+  border: 1px solid #E7EAF3;
+  padding: 10px;
+  box-sizing: border-box;
 }

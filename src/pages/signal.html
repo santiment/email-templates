@@ -1,0 +1,30 @@
+---
+layout: index-layout
+image-url: https://api-stage.santiment.net/images/emails/
+---
+
+{{>header}}
+
+<container class="radius signal">
+
+  <spacer size="26"></spacer>
+
+  <row>
+    <columns small="12">
+
+      <center>
+        <img src="{{image-url}}signal.png" class='signal-image' alt="" />
+
+      <spacer size="30"></spacer>
+
+      <h3 mc:edit="header">Your Santiment signal just triggered!</h3>
+      *|payload|*
+      <spacer size="10"></spacer>
+      </center>
+
+    </columns>
+  </row>
+</container>
+{{>footer}}
+
+
