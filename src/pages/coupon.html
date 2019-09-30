@@ -26,32 +26,38 @@ image-url: https://api-stage.santiment.net/images/emails/
       <spacer size="8"></spacer>
 
       <row>
-        <columns large='5' vailgn='middle'>
+        <columns large='5' vailgn='middle' class="product-item">
           <img src="{{image-url}}list-item.png" alt="" class='float-left list-item' />
           <span mc:edit="item_1"><b>Sanbase</b></span>
           <spacer size="4"></spacer>
           <p class='item-desc'>Platform for in-depth coin analysis,&nbsp;low-latency&nbsp;signals, asset&nbsp;watchlists.</p>
+          <a href="https://app.santiment.net" target='_blank'>Learn more</a>
+          <spacer size="14"></spacer>
         </columns>
-        <columns large='5' vailgn='middle'>
+        <columns large='5' vailgn='middle' class="product-item">
           <img src="{{image-url}}list-item.png" alt="" class='float-left list-item' />
           <span mc:edit="item_2"><b>Sangraphs</b></span>
           <spacer size="4"></spacer>
-          <p class='item-desc'>Advanced metrics and charts for&nbsp;700+&nbsp;coins.</p>
+          <p class='item-desc'>Advanced on-chain, social and development metrics and charts for&nbsp;700+&nbsp;coins.</p>
+          <a href="https://santiment.net/sangraphs/" target='_blank'>Learn more</a>
+          <spacer size="14"></spacer>
         </columns>
       </row>
 
       <row>
-        <columns large='5' vailgn='middle'>
+        <columns large='5' vailgn='middle' class="product-item">
           <img src="{{image-url}}list-item.png" alt="" class='float-left list-item' />
           <span mc:edit="item_3"><b>Sansheets</b></span>
           <spacer size="4"></spacer>
           <p class='item-desc'>Google Spreadsheet plugin for&nbsp;Santiment&nbsp;data.</p>
+          <a href="https://sheets.santiment.net" target='_blank'>Learn more</a>
         </columns>
-        <columns large='5' vailgn='middle'>
+        <columns large='5' vailgn='middle' class="product-item">
           <img src="{{image-url}}list-item.png" alt="" class='float-left list-item' />
           <span mc:edit="item_4"><b>Neuro</b></span>
           <spacer size="4"></spacer>
           <p class='item-desc'>The most comprehensive crypto API&nbsp;on&nbsp;the&nbsp;market.</p>
+          <a href="https://neuro.santiment.net" target='_blank'>Learn more</a>
         </columns>
       </row>
 
@@ -81,45 +87,6 @@ image-url: https://api-stage.santiment.net/images/emails/
     </columns>
   </row>
 </container>
-<container class="secondary footer">
-    <spacer size="24"></spacer>
-
-    <row>
-    {{>preferences}}
-    <columns small='12' large='5' vailgn='center'>
-        <p style='margin: 0; Margin: 0' class='small-text-left'>
-        <a href="https://discord.gg/6fMxk82" target='_blank'>
-          <img style="padding-right: 24px" class='social' src="{{image-url}}social-discord.png" alt='' />
-        </a>
-        <a href="https://twitter.com/santimentfeed" target='_blank'>
-          <img style="padding-right: 24px" class='social' src="{{image-url}}social-twitter.png" alt='' />
-        </a>
-        <a href="https://t.me/santiment_network" target='_blank'>
-          <img  src="{{image-url}}social-telegram.png" class='social' alt='' />
-        </a>
-      </p>
-    </columns>
-    </row>
-    <row>
-      <columns small="12">
-      <small class='small'>
-        You are receiving this email because you signed up to receive these messages from us.
-      </small>
-
-      <spacer size="12"></spacer>
-
-      <row>
-        <columns large='8' small='12'>
-        <small class='small'>© 2019 Santiment Inc. All rights reserved</small>
-      </columns>
-      <columns large='4' small='12'>
-        <p style='color: #7a859e; margin: 0; Margin: 0;' class='text-right small-text-left small'>
-        <a href='https://app.santiment.net/privacy-policy' target='_blank'><small>Terms & Privacy</small></a>
-      </p>
-      </columns>
-      </row>
-    </columns>
-    </row>
-  </container>
+{{>footer}}
 
 
