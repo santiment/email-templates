@@ -1,0 +1,83 @@
+---
+layout: index-layout
+image-url: https://api-stage.santiment.net/images/emails/
+---
+
+{{>header}}
+<container class="main-info radius" style="background-color: #14C393;">
+  <center>
+    <spacer size="40"></spacer>
+    <row valign="middle">
+      <columns large='7' small='11'>
+        <h4 class='dates'>August 21 - August 27</h4>
+        <h3 class='title'>Your weekly updates!</h3>
+        <p class='description'>Hey there, power user ⚡. See insights based on your watchlists below:</p>
+      </columns>
+      <columns large='5' small="0" class='image' style="vertical-align: middle" >
+        <img src="{{image-url}}calendar.png" width="170px" class='calendar-image' alt=""  align="center" />
+      </columns>
+    </row>
+    <spacer size="12"></spacer>
+  </center>
+  </container>
+  <spacer size="16"></spacer>
+<container class="radius weekly">
+  <container class="content">
+  <row>
+    <columns small="12">
+      <center>
+      <spacer size="32"></spacer>
+      <h4 mc:edit="header-1" class='text-center'>Your monitored watchlists</h4>
+      <spacer size="15"></spacer>
+      <row  class="collapse">
+        <columns vailgn='center'>
+          <p style='margin: 0; Margin: 0; text-align: center;' class='small-text-center watchlists'>
+          {{>watchlist}}
+          {{>watchlist}}
+          {{>watchlist}}
+          <span class="watchlist" style='text-align: center;'>
+            <img src="{{image-url}}new.png" class="watchlist-new-img" />
+            <a href="https://app.santiment.net/assets" target="_blank" rel="noopener noreferrer" class="watchlist-link-new">
+              Add new watchlist
+            </a>
+          </span>
+
+        </p>
+      </columns>
+    </row>
+    <spacer size="62"></spacer>
+    </center>
+    </columns>
+  </row>
+</container>
+</container>
+  <spacer size="12"></spacer>
+<container class="radius weekly">
+  <container class="content">
+  <row>
+    <columns small="12">
+      <center>
+    <spacer size="32"></spacer>
+    <row>
+      <columns large="10" small="8">
+        <h4 mc:edit="header-2">Related insights</h4>
+      </columns>
+      <columns large="2" small="4">
+        <p class="small-text-right">
+          <a href="https://insights.santiment.net" target="_blank" rel="noopener noreferrer" class="watchlist-link-new insights-all">
+            All insights
+          </a>
+        </p>
+      </columns>
+    </row>
+    {{>insight}}
+    <!-- {{>insight}} -->
+    <spacer size="10"></spacer>
+    </center>
+    </columns>
+  </row>
+</container>
+</container>
+{{>footer}}
+
+
