@@ -1,0 +1,164 @@
+.calendar-image {
+  width: 170px !important;
+  height: auto !important;
+  margin-left: auto;
+}
+
+
+.main-info .dates {
+	font-size: 14px;
+	line-height: 20px;
+	color: #E7EAF3;
+	margin: 0;
+}
+
+.main-info .title {
+	font-size: 28px;
+	line-height: 40px;
+	color: #fff;
+	margin: 0 0 12px;
+}
+
+.main-info .description {
+	font-size: 16px;
+	line-height: 24px;
+	color: #fff;
+}
+
+.main-info .image {
+	height: 100%;
+}
+
+.main-info {
+	vertical-align: middle;
+	background: #14C393 !important;
+	border-radius: 8px 8px 0 0 !important;
+}
+
+.weekly {
+	border-radius: 0 !important;
+}
+
+.watchlists .watchlist {
+	display: inline-block;
+	text-align: left;
+	margin: 4px;
+	height: 162px;
+	border: 1px solid #E7EAF3 !important;
+	border-radius: 4px;
+	width: 234px;
+	box-sizing: border-box;
+	padding: 24px 32px;
+}
+
+.watchlist-title{
+	font-size: 14px;
+	line-height: 20px;
+	display: block;
+	white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+	margin: 0 0 8px;
+	color: #181B2B;
+}
+
+.watchlist-marketcap{
+	font-size: 26px;
+	line-height: 30px;
+	display: block;
+	white-space: nowrap;
+  overflow: hidden;
+	margin: 0 0 16px;
+	color: #2F354D;
+}
+
+.watchlist-link {
+	font-size: 16px;
+	line-height: 20px;
+	display: block;
+	text-align: center;
+	margin: 0;
+	border: 1px solid #E7EAF3;
+	border-radius: 4px;
+	padding: 8px 16px;
+}
+
+.watchlist-link-new {
+	font-size: 16px;
+	line-height: 20px;
+	color: #14C393;
+	margin: 0 auto;
+}
+
+
+.watchlist-new-img {
+	width: 65px !important;
+	height: 59px !important;
+	margin: 10px auto 12px auto;
+}
+
+.insight {
+	border: 1px solid #E7EAF3 !important;
+	border-radius: 4px;
+	height: 162px;
+	width: 100%;
+}
+
+.tags span {
+	border: 1px solid #E7EAF3 !important;
+	border-radius: 4px;
+	display: inline-block;
+	padding: 3px 6px;
+	color: #7A859E;
+	font-size: 12px;
+	line-height: 18px;
+	margin: 0 4px 4px 0;
+}
+
+.tags {
+	display: block;
+	margin: 20px 24px 10px;
+}
+
+.insight-title {
+	font-weight: normal;
+	font-size: 18px;
+	display: block;
+	color: #2F354D;
+	line-height: 26px;
+	margin: 20px 24px 1px;
+}
+
+.insight-author {
+	font-size: 14px;
+	line-height: 20px;
+	margin: 0 24px !important;
+	color: #2F354D;
+}
+
+.insight-date {
+	font-size: 12px;
+	line-height: 18px;
+	margin: 0 24px 5px !important;
+	color: #7A859E;
+	padding-bottom: 12px;
+  border-bottom: 1px solid #E7EAF3;
+}
+
+.insight-link {
+	font-size: 14px;
+	line-height: 20px;
+	margin-left: auto;
+}
+
+@media only screen and (max-width: 540px) {
+	.main-info .image {
+		display: none;
+	}
+
+	.watchlists .watchlist {
+		width: 100% !important;
+	}
+}
+
+

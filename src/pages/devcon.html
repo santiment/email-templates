@@ -1,0 +1,84 @@
+---
+layout: index-layout
+image-url: https://api-stage.santiment.net/images/emails/
+---
+
+{{>header}}
+
+<container class="radius">
+
+  <spacer size="26"></spacer>
+
+  <row>
+    <columns small="12">
+
+      <center>
+        <img src="{{image-url}}gift.png" class='gift-image' alt="" />
+
+      <spacer size="30"></spacer>
+
+      <h3 mc:edit="header" class='text-center'>Free 14-day trial of ALL Santiment products</h3>
+
+      <p mc:edit="description" class='text-center'>
+      A very special offer for all Devcon attendees/buidlers!
+      <p/>
+
+      <spacer size="8"></spacer>
+
+      <row>
+        <columns large='5' vailgn='middle' class="product-item">
+          <img src="{{image-url}}list-item.png" alt="" class='float-left list-item' />
+          <span mc:edit="item_1"><b>Sanbase</b></span>
+          <spacer size="4"></spacer>
+          <p class='item-desc'>Our platform for in-depth coin analysis,&nbsp;low-latency&nbsp;signals, dynamic&nbsp;watchlists and more.</p>
+          <a href="https://app.santiment.net" target='_blank'>Learn more</a>
+          <spacer size="14"></spacer>
+        </columns>
+        <columns large='5' vailgn='middle' class="product-item">
+          <img src="{{image-url}}list-item.png" alt="" class='float-left list-item' />
+          <span mc:edit="item_2"><b>Sangraphs</b></span>
+          <spacer size="4"></spacer>
+          <p class='item-desc'>Advanced on-chain, social and development metrics and charts for&nbsp;700+&nbsp;coins.</p>
+          <a href="https://santiment.net/sangraphs/" target='_blank'>Learn more</a>
+          <spacer size="14"></spacer>
+        </columns>
+      </row>
+
+      <row>
+        <columns large='5' vailgn='middle' class="product-item">
+          <img src="{{image-url}}list-item.png" alt="" class='float-left list-item' />
+          <span mc:edit="item_3"><b>Sansheets</b></span>
+          <spacer size="4"></spacer>
+          <p class='item-desc'>Google Spreadsheet plugin for&nbsp;Santiment&nbsp;data.</p>
+          <a href="https://sheets.santiment.net" target='_blank'>Learn more</a>
+        </columns>
+        <columns large='5' vailgn='middle' class="product-item">
+          <img src="{{image-url}}list-item.png" alt="" class='float-left list-item' />
+          <span mc:edit="item_4"><b>Neuro</b></span>
+          <spacer size="4"></spacer>
+          <p class='item-desc'>The most comprehensive crypto API&nbsp;on&nbsp;the&nbsp;market.</p>
+          <a href="https://neuro.santiment.net" target='_blank'>Learn more</a>
+        </columns>
+      </row>
+
+      <spacer size="4"></spacer>
+      <p class='border' />
+      <spacer size="6"></spacer>
+
+      <p class='text-center'>
+      This offer is valid until 01 November 2019
+      </p>
+
+      <spacer size="12"></spacer>
+
+      <button class="radius" href="*|HTML:SPECIAL_LINK|*" target="_blank">
+        <span mc:edit="button_text">Sign up for a 14-day trial</span>
+      </button>
+      </center>
+
+    </columns>
+  </row>
+</container>
+{{>footer}}
+
+
