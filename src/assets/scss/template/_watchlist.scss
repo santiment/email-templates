@@ -9,14 +9,14 @@
 	font-size: 14px;
 	line-height: 20px;
 	color: #E7EAF3;
-	margin: 0;
+	margin: 0 !important;
 }
 
 .main-info .title {
 	font-size: 28px;
 	line-height: 40px;
 	color: #fff;
-	margin: 0 0 12px;
+	margin: 0 0 12px !important;
 }
 
 .main-info .description {
@@ -42,11 +42,11 @@
 .watchlists .watchlist {
 	display: inline-block;
 	text-align: left;
-	margin: 4px;
+	margin: 6px;
 	height: 162px;
 	border: 1px solid #E7EAF3 !important;
 	border-radius: 4px;
-	width: 234px;
+	width: 230px;
 	box-sizing: border-box;
 	padding: 24px 32px;
 }
@@ -92,9 +92,9 @@
 
 
 .watchlist-new-img {
-	width: 65px !important;
-	height: 59px !important;
-	margin: 10px auto 12px auto;
+	width: 48px !important;
+	height: 51px !important;
+	margin: 18px auto 12px auto;
 }
 
 .insight {
@@ -157,7 +157,7 @@
 	}
 
 	.watchlists .watchlist {
-		width: 100% !important;
+		width: 276px !important;
 	}
 }
 

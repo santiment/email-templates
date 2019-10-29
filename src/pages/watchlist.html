@@ -9,7 +9,7 @@ image-url: https://api-stage.santiment.net/images/emails/
     <spacer size="40"></spacer>
     <row valign="middle">
       <columns large='7' small='11'>
-        <h4 class='dates'>August 21 - August 27</h4>
+        <h4 class='dates'>dates</h4>
         <h3 class='title'>Your weekly updates!</h3>
         <p class='description'>Hey there, power user ⚡. See insights based on your watchlists below:</p>
       </columns>
@@ -17,7 +17,7 @@ image-url: https://api-stage.santiment.net/images/emails/
         <img src="{{image-url}}calendar.png" width="170px" class='calendar-image' alt=""  align="center" />
       </columns>
     </row>
-    <spacer size="12"></spacer>
+    <spacer size="22"></spacer>
   </center>
   </container>
   <spacer size="16"></spacer>
@@ -28,24 +28,27 @@ image-url: https://api-stage.santiment.net/images/emails/
       <center>
       <spacer size="32"></spacer>
       <h4 mc:edit="header-1" class='text-center'>Your monitored watchlists</h4>
-      <spacer size="15"></spacer>
+      <spacer size="4"></spacer>
       <row  class="collapse">
         <columns vailgn='center'>
           <p style='margin: 0; Margin: 0; text-align: center;' class='small-text-center watchlists'>
+            <!-- watchlists -->
           {{>watchlist}}
           {{>watchlist}}
-          {{>watchlist}}
+          <!-- / watchlists -->
+          <!--if new_watchlist -->
           <span class="watchlist" style='text-align: center;'>
             <img src="{{image-url}}new.png" class="watchlist-new-img" />
             <a href="https://app.santiment.net/assets" target="_blank" rel="noopener noreferrer" class="watchlist-link-new">
               Add new watchlist
             </a>
           </span>
+          <!-- / if -->
 
         </p>
       </columns>
     </row>
-    <spacer size="62"></spacer>
+    <spacer size="3"></spacer>
     </center>
     </columns>
   </row>
@@ -70,8 +73,9 @@ image-url: https://api-stage.santiment.net/images/emails/
         </p>
       </columns>
     </row>
+     <!-- insights -->
     {{>insight}}
-    <!-- {{>insight}} -->
+     <!-- /insights -->
     <spacer size="10"></spacer>
     </center>
     </columns>
