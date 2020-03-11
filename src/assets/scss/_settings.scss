@@ -51,6 +51,10 @@ $global-breakpoint: $global-width + $global-gutter;
 	color: $medium-gray;
 }
 
+.name {
+	color: black !important;
+}
+
 // 2. Grid
 // -------
 
