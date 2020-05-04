@@ -161,6 +161,48 @@
 	}
 }
 
+
+.notification-text {
+  display: inline-block;
+  margin-top: 6px;
+  margin-left: 12px;
+}
+
+.notification-comment {
+  margin-left: 50px;
+  background-color: #F9FAFC;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.notification-bottom {
+  margin-left: 50px;
+}
+
+@media only screen and (max-width: 540px) {
+	.notification-text {
+	  display: inline-block;
+	  margin-top: 10px;
+	  margin-left: 0;
+	}
+
+.notification-comment {
+  margin-left: 0px;
+  background-color: #F9FAFC;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.notification-bottom {
+  margin-left: 00px;
+}
+}
+
+
 .gray {
 	color: #7A859E;
 }
