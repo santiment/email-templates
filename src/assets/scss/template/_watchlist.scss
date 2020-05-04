@@ -183,23 +183,17 @@
 
 @media only screen and (max-width: 540px) {
 	.notification-text {
-	  display: inline-block;
-	  margin-top: 10px;
-	  margin-left: 0;
+	  margin-top: 10px !important;
+	  margin-left: 0 !important;
 	}
 
-.notification-comment {
-  margin-left: 0px;
-  background-color: #F9FAFC;
-  border-radius: 8px;
-  padding: 16px;
-  font-size: 14px;
-  line-height: 20px;
-}
+	.notification-comment {
+	  margin-left: 0px !important;
+	}
 
-.notification-bottom {
-  margin-left: 00px;
-}
+	.notification-bottom {
+	  margin-left: 0px  !important;
+	}
 }
 
 
