@@ -1,0 +1,57 @@
+---
+layout: index-layout
+image-url: https://api.santiment.net/images/emails/
+avatar: https://production-sanbase-images.s3.amazonaws.com/uploads/684aec65d98c952d6a29c8f0fbdcaea95787f1d4e752e62316e955a84ae97bf5_1588611275860_default-avatar.png
+total-number: 3
+username: Calvin Flores
+entity-name: BTC up to 10%
+comment: Pretty interesting insight! I am really curious how the situation will be in the next year
+---
+
+{{>header}}
+<container class="radius">
+  <center>
+    <spacer size="40"></spacer>
+  	<img src="https://production-sanbase-images.s3.amazonaws.com/uploads/1250a428383c0803e6a13c89835cdb9c6b441edb4cd63869476a5cc70c528ed1_1588611951801_Notification.png" class='signal-image' align="center" />
+    <br/>
+    <h3 mc:edit="header" class='text-center'>
+      {{total-number}} New Notifications
+    </h3>
+    <p class='text-center'>
+      Hey! Here’s some notifications you could miss on Santiment.
+    </p>
+    <spacer size="22"></spacer>
+  </center>
+</container>
+<spacer size="12"></spacer>
+<container class="radius">
+  <container class="content">
+    <row>
+      <columns small="12">
+        <center>
+        <spacer size="32"></spacer>
+        <p class="notification-top">
+        	<img src="{{avatar}}" class='avatar-image' align="left" />
+        	<span class="notification-text">
+        		{{username}} commented on "{{entity-name}}"
+        	</span>
+        </p>
+        <p class="notification-comment">
+        	{{comment}}
+        </p>
+        <p class="notification-bottom">
+          <a href="{{entity-link}}" target="_blank" >
+          	Reply
+          </a>
+    		</p>
+        </center>
+      </columns>
+    </row>
+  </container>
+</container>
+{{>footer}}
+
+
+
+
+
