@@ -132,6 +132,10 @@ a {
   margin-bottom: 4px;
 }
 
+.footer a, .footer a .small {
+  border-bottom: none !important;
+}
+
 .footer a .small, .underline{
   border-bottom: 1px solid #7A859E;
 }
