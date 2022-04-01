@@ -11,12 +11,14 @@ import siphon   from 'siphon-media-query';
 import path     from 'path';
 import merge    from 'merge-stream';
 import beep     from 'beepbeep';
-import colors   from 'colors';
 
 const $ = plugins();
 
+var dartSass = require('gulp-sass');
+dartSass.compiler = require('sass');
+
 // Look for the --production flag
-const PRODUCTION = !!(yargs.argv.production);
+const PRODUCTION = !!yargs.argv.production;
 const EMAIL = yargs.argv.to;
 
 // Declar var so that both AWS and Litmus task can use it.
@@ -72,9 +74,9 @@ function resetPages(done) {
 function sass() {
   return gulp.src('src/assets/scss/app.scss')
     .pipe($.if(!PRODUCTION, $.sourcemaps.init()))
-    .pipe($.sass({
-      includePaths: ['node_modules/foundation-emails/scss']
-    }).on('error', $.sass.logError))
+    .pipe(dartSass.sync({
+        includePaths: ['node_modules/foundation-emails/scss']
+    }).on('error', dartSass.logError))
     .pipe($.if(PRODUCTION, $.uncss(
       {
         html: ['dist/**/*.html']
@@ -218,9 +220,9 @@ function zip() {
 
     var moveImages = gulp.src(sourcePath)
       .pipe($.htmlSrc({ selector: 'img'}))
-      .pipe($.rename(function (path) {
-        path.dirname = fileName + path.dirname.replace('dist', '');
-        return path;
+      .pipe($.rename(function (currentpath) {
+        currentpath.dirname = path.join(fileName, currentpath.dirname.replace('dist', ''));
+        return currentpath;
       }));
 
     return merge(moveHTML, moveImages)
