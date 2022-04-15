@@ -5,11 +5,11 @@
 body,
 html,
 .body {
-  background: #f9fafc !important;
+  background: #F7F8FB;
 }
 
 .container.header {
-  background: #f9fafc;
+  background: #F7F8FB;
 }
 
 .body-drip {
@@ -18,7 +18,7 @@ html,
 
 // Full Width Headers
 .header {
-  background: #8a8a8a;
+  background: #1C1F31;
 }
 
 .header .columns {
@@ -30,15 +30,128 @@ html,
   padding-top: 15px;
 }
 
-.header .wrapper-inner {
-  padding: 20px;
-}
-
 .header .container {
   background: transparent;
 }
 
+.browser-view-wrapper {
+  background: #1C1F31;
+}
+
+.browser-view {
+  float: right;
+  margin-right: 48px;
+}
+
+// Body Expander Styles
+
+.body-expander {
+  background: #1C1F31;
+}
+
+// Container Styles
+
+.container {
+  padding-left: 48px !important;
+  padding-right: 48px !important;
+}
+
+table.container.radius {
+  border-radius: 4px !important;
+}
+
+table.container {
+  width: 600px;
+}
+
+table.body {
+  background: #F7F8FB;
+}
+
+table.button.radius table td {
+  border-radius: 6px;
+}
+
+.body-expander table.container.radius {
+  border-radius: 0 !important;
+  border-top-left-radius: 4px !important;
+  border-top-right-radius: 4px !important;
+}
+
+@media only screen and (max-width: 600px) {
+  table.body .container {
+    width: 95% !important;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .container {
+    padding-left: 48px !important;
+    padding-right: 48px !important;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  table.body .collapse > tbody > tr > .columns, table.body .collapse > tbody > tr > .column {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+}
+
+// Mail Styles
+
+.mail-list {
+  list-style-type: none;
+  padding-left: 20px !important;
+  margin: 0 !important;
+  Margin: 0 !important;
+}
+
+.mail-list li {
+  height: 24px;
+  display: table;
+}
+
+.mail-list span {
+  height: 24px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.mail-list-check {
+  height: 16px !important;
+  padding-top: 4px;
+  margin-right: 12px;
+}
+
+.mail-regards-logo {
+  height: 24px !important;
+}
+
+table.button {
+  margin: 0 !important;
+  Margin: 0 !important;
+}
+
+table.button table td a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-align: left;
+  display: inline-block;
+  padding: 8px 20px;
+  border: 0 solid #14c393;
+  border-radius: 6px;
+}
+
 // Social Media
+.social {
+  height: 13px !important;
+  float: right;
+}
+
 table.button.facebook table td {
   background: #3B5998 !important;
   border-color: #3B5998;
@@ -62,11 +175,6 @@ table.button.google table td {
   background: transparent !important;
 }
 
-.social {
-  width: 16px !important;
-  height: 16px !important;
-  display: inline;
-}
 
 .list-item {
   padding: 3px 6px 0 0;
