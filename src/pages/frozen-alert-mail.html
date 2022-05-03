@@ -1,0 +1,41 @@
+---
+layout: mail-layout
+subject: Your Alert is Frozen!
+image-url: https://api.santiment.net/images/emails/
+---
+
+<container class="radius">
+    <row class="collapse">
+        <columns small="12" valign="middle">
+            <center>
+                <img class="mail-alert-image" src="*|HTML:ALERT_IMAGE_SRC|*" alt="Alert">
+            </center>
+
+            <spacer size="32"></spacer>
+
+            <span mc:edit="header" class="h1 c-black">Your Alert is Frozen!</span>
+
+            <spacer size="24"></spacer>
+
+            <p mc:edit="mail-description" class="body-1 c-black m-0">
+                Your Alert has expired. You can remove all restrictions including the number of alerts and their duration by joining our PRO plan.
+            </p>
+
+            <spacer size="32"></spacer>
+
+            <button class="radius" href="https://app.santiment.net/pricing" target="_blank">
+                <span mc:edit="button_text">Extend alert’s duration</span>
+            </button>
+
+            <spacer size="32"></spacer>
+
+            {{> san-fam-regards}}
+
+            <spacer size="26"></spacer>
+        </columns>
+    </row>
+</container>
+
+{{> academy-alerts}}
+
+{{> mail-footer-auto}}
