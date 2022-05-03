@@ -16,11 +16,6 @@ html,
   border-top: 8px solid #663399;
 }
 
-// Full Width Headers
-.header {
-  background: #1C1F31;
-}
-
 .header .columns {
   padding-bottom: 0;
 }
@@ -34,19 +29,9 @@ html,
   background: transparent;
 }
 
-.browser-view-wrapper {
-  background: #1C1F31;
-}
-
 .browser-view {
   float: right;
   margin-right: 48px;
-}
-
-// Body Expander Styles
-
-.body-expander {
-  background: #1C1F31;
 }
 
 // Container Styles
@@ -133,7 +118,6 @@ table.button.radius table td {
   list-style-type: none;
   padding-left: 20px !important;
   margin: 0 !important;
-  Margin: 0 !important;
 }
 
 .mail-list li {
@@ -159,7 +143,6 @@ table.button.radius table td {
 
 table.button {
   margin: 0 !important;
-  Margin: 0 !important;
 }
 
 table.button table td a {
@@ -269,6 +252,10 @@ a {
   margin-bottom: 4px;
 }
 
+.footer {
+  margin-bottom: 120px !important;
+}
+
 .footer a, .footer a .small {
   border-bottom: none !important;
 }
@@ -279,7 +266,6 @@ a {
 
 .signal img {
   margin: 10px 0 0;
-  Margin: 10px 0 0;
   border: 1px solid #E7EAF3;
   padding: 10px;
   box-sizing: border-box;
