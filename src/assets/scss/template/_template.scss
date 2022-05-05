@@ -116,13 +116,15 @@ table.button.radius table td {
 
 .mail-list {
   list-style-type: none;
-  padding-left: 20px !important;
+  padding-left: 0 !important;
   margin: 0 !important;
 }
 
 .mail-list li {
   height: 24px;
   display: table;
+  // bypass gmail margin left style
+  margin-left: 0 !important;
 }
 
 .mail-list span {
