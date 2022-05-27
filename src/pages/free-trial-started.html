@@ -1,6 +1,6 @@
 ---
 layout: mail-layout
-subject: Welcome to Sanbase
+subject: Free trial started
 image-url: https://api.santiment.net/images/emails/
 ---
 
@@ -8,12 +8,16 @@ image-url: https://api.santiment.net/images/emails/
     <spacer size="16"></spacer>
     <row class="collapse">
         <columns small="12">
-            <span mc:edit="header" class="h1 c-black">🛑 You’ve canceled your *|subscription_type|*</span>
+            <span mc:edit="header" class="h1 c-black">✨ Enjoy your free trial!</span>
 
             <spacer size="24"></spacer>
 
             <p mc:edit="mail-description" class="body-1 c-black m-0">
-                Your *|subscription_type|* subscription is active until <span class="txt-m">*|end_subscription_date|*</span>
+                Hey, *|username|*<br />
+                <br />
+                We have upgraded your account to <b>*|SUBSCRIPTION_TYPE|*</b> for the next <b>14 days</b>.<br />
+                <br />
+                Enjoy all extra features Sanbase currently provides. As a new user we want you to see everything we have to offer.
             </p>
 
             <spacer size="48"></spacer>
@@ -22,8 +26,8 @@ image-url: https://api.santiment.net/images/emails/
 
             <spacer size="24"></spacer>
 
-            <button class="radius" href="https://app.santiment.net/pricing" target="_blank">
-                <span mc:edit="button_text">Renew Your Subscribtion Now</span>
+            <button class="radius" href="https://app.santiment.net" target="_blank">
+                <span mc:edit="button_text">Go to Sanbase</span>
             </button>
 
             <spacer size="48"></spacer>

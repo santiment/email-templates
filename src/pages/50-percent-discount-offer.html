@@ -1,0 +1,48 @@
+---
+layout: mail-layout
+subject: Welcome to Sanbase
+image-url: https://api.santiment.net/images/emails/
+---
+
+<container class="radius">
+    <spacer size="16"></spacer>
+    <row class="collapse">
+        <columns small="12">
+            <span mc:edit="header" class="h1 c-black">Hi, *|name|* </span>
+
+            <spacer size="24"></spacer>
+
+            <p mc:edit="mail-description" class="body-1 c-black m-0">
+                Thank you for starting your free Santiment trial last week.<br>
+                <br>
+                We know the journey to become a crypto billionaire is a tough one, so we would like to support you there as much as we can.
+                That’s why we want to offer for you this <span style="color: #FFAD4D">one-time 50% discount!</span> <br>
+                <br>
+                Get the offer by clicking on the button bellow 👇            
+            </p>
+            
+            <spacer size="48"></spacer>
+
+            <a href="https://app.santiment.net/pricing" target="_blank">
+                <img class="discount" src="https://mcusercontent.com/122a728fd98df22b204fa533c/images/70b0a3bb-2b59-0025-5fbc-36dfa4a9afcd.png" alt="discount">
+            </a>
+
+            <spacer size="48"></spacer>
+
+            <p class="c-waterloo">
+                *You can use this discount only while<br>
+                you are on a free trial <b>(until *|end_subscription_date|* ).</b>
+            </p>
+
+            <spacer size="48"></spacer>
+
+            {{> san-fam-regards}}
+
+            <spacer size="26"></spacer>
+        </columns>
+    </row>
+</container>
+
+{{> footer-testimonial}}
+
+{{> mail-footer-auto}}
