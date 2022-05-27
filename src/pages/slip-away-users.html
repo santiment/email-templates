@@ -1,0 +1,44 @@
+---
+layout: mail-layout
+subject: Slip away users
+image-url: https://api.santiment.net/images/emails/
+---
+
+<container class="radius">
+    <spacer size="16"></spacer>
+    <row class="collapse">
+        <columns small="12">
+            <span mc:edit="header" class="h1 c-black">👋 Hi, *|name|* </span>
+
+            <spacer size="24"></spacer>
+
+            <p mc:edit="mail-description" class="body-1 c-black m-0">
+                Thank you for trusting Sanbase to guide your crypto strategy.<br>
+                <br>
+                Did you know that with Sanbase you can check Social Trends for a bunch of assets?<br>
+                <br>
+                For example, our <a href="https://insights.santiment.net/read/sentiment-affecting-btc-price%3A-correlation-or-causation%3F-6849" target="_blank">recent research</a> suggested that social moods towards Bitcoin are directly reflected in its price. More negative talks - lower price!
+            </p>
+
+            <spacer size="24"></spacer>
+
+            <img src="https://mcusercontent.com/122a728fd98df22b204fa533c/images/02f814bf-c4ba-b76a-9870-03788a3587dc.png" alt="chart"/>
+
+            <spacer size="48"></spacer>
+
+            <p mc:edit="mail-description" class="body-1 c-black m-0">
+                👉🏻 Check out this <a href="https://app.santiment.net/charts/J75kEBkf__sCl" target="_blank">Simple Chart</a> and see for yourself how increased social media discussions about a certain asset affect its price*.<br>
+                <br>
+                *tokens are replaceable 🙂
+            </p>
+
+            <spacer size="48"></spacer>
+
+            {{> san-fam-regards}}
+
+            <spacer size="26"></spacer>
+        </columns>
+    </row>
+</container>
+
+{{> mail-footer-auto}}
