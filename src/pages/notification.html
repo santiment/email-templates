@@ -1,57 +1,94 @@
 ---
-layout: index-layout
-image-url: https://api.santiment.net/images/emails/
-avatar: https://production-sanbase-images.s3.amazonaws.com/uploads/684aec65d98c952d6a29c8f0fbdcaea95787f1d4e752e62316e955a84ae97bf5_1588611275860_default-avatar.png
-total-number: 3
-username: Calvin Flores
-entity-name: BTC up to 10%
-comment: Pretty interesting insight! I am really curious how the situation will be in the next year
+layout: mail-layout
 ---
 
-{{>header}}
 <container class="radius">
-  <center>
+  <spacer size="16"></spacer>
+  <h3 class="h1 c-black">
+    You have *|comments_count|* new comments and *|likes_count|* new likes
+  </h3>
+  <spacer size="16"></spacer>
+  <p class="body-1 c-black">👋 Hey, *|username|* </p>
+  <p class="body-1 c-black">Here’s some activities you could miss on Santiment.</p>
+  <spacer size="40"></spacer>
+</container>
+
+{{#if comments_count}}
+  <spacer size="4"></spacer>
+
+  <container class="radius">
+    <spacer size="44"></spacer>
+    <table>
+      <tr>
+        <td>
+          <img class="notificationIcon" src="https://mcusercontent.com/122a728fd98df22b204fa533c/images/130fde5b-3434-57c0-4e10-a5de0c792409.png" />
+        </td>
+        <td>
+          <h2 class="h2">Comments</h2>
+        </td>
+      </tr>
+    </table>
     <spacer size="40"></spacer>
-  	<img src="https://production-sanbase-images.s3.amazonaws.com/uploads/1250a428383c0803e6a13c89835cdb9c6b441edb4cd63869476a5cc70c528ed1_1588611951801_Notification.png" class='signal-image' align="center" />
-    <br/>
-    <h3 mc:edit="header" class='text-center'>
-      {{total-number}} New Notifications
-    </h3>
-    <p class='text-center'>
-      Hey! Here’s some notifications you could miss on Santiment.
-    </p>
-    <spacer size="22"></spacer>
-  </center>
-</container>
-<spacer size="12"></spacer>
-<container class="radius">
-  <container class="content">
-    <row>
-      <columns small="12">
-        <center>
+    {{#each comments}}
+      <table>
+        <tr>
+          <td style="width: 55px;">
+            <img class="avatar-image" style="border-radius: 50%;" src="{{this.avatar_url}}" />
+          </td>
+          <td>
+            <span style="color: #15181F;">@{{this.username}}</span> <span class="c-waterloo">{{#if this.reply_to_text}}replied{{else}}commented{{/if}} on your</span> <a href="{{this.link}}" target="_blank">"{{this.title}}"</a>
+            <spacer size="10"></spacer>
+            <p class="comment-text body-2">{{this.comment_text}}</p>
+            <a href="{{this.link}}" target="_blank" style="margin-left: 12px;">Reply</a>
+          </td>
+        </tr>
+      </table>
+      {{#unless @last}}
         <spacer size="32"></spacer>
-        <p class="notification-top">
-        	<img src="{{avatar}}" class='avatar-image' align="left" />
-        	<span class="notification-text">
-        		{{username}} commented on "{{entity-name}}"
-        	</span>
-        </p>
-        <p class="notification-comment">
-        	{{comment}}
-        </p>
-        <p class="notification-bottom">
-          <a href="{{entity-link}}" target="_blank" >
-          	Reply
-          </a>
-    		</p>
-        </center>
-      </columns>
-    </row>
+        <hr class="entitySeprator" />
+        <spacer size="32"></spacer>
+      {{/unless}}
+    {{/each}}
+    <spacer size="44"></spacer>
   </container>
-</container>
-{{>footer}}
+{{/if}}
 
+{{#if likes_count}}
+  <spacer size="4"></spacer>
 
+  <container class="radius">
+    <spacer size="44"></spacer>
+    <table>
+      <tr>
+        <td>
+          <img class="notificationIcon" src="https://mcusercontent.com/122a728fd98df22b204fa533c/images/a44a5e29-7d3d-f75a-8169-8360932790ef.png" />
+        </td>
+        <td>
+          <h2 class="h2">Likes</h2>
+        </td>
+      </tr>
+    </table>
+    <spacer size="40"></spacer>
+    {{#each likes}}
+      <table>
+        <tr>
+          <td style="width: 55px;">
+            <img class="avatar-image" style="border-radius: 50%;" src="{{this.avatar_url}}" />
+          </td>
+          <td>
+            <span style="color: #15181F;">@{{this.username}}</span> <span class="c-waterloo">likes your {{this.entity}}</span> <a href="{{this.link}}" target="_blank">"{{this.title}}"</a>
+            <spacer size="10"></spacer>
+          </td>
+        </tr>
+      </table>
+      {{#unless @last}}
+        <spacer size="32"></spacer>
+        <hr class="entitySeprator" />
+        <spacer size="32"></spacer>
+      {{/unless}}
+    {{/each}}
+    <spacer size="44"></spacer>
+  </container>
+{{/if}}
 
-
-
+{{> mail-footer-auto}}
