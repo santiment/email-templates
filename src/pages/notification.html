@@ -13,7 +13,9 @@ layout: mail-layout
   <spacer size="40"></spacer>
 </container>
 
+{{{{raw}}}}
 {{#if comments_count}}
+{{{{/raw}}}}
   <spacer size="4"></spacer>
 
   <container class="radius">
@@ -29,31 +31,36 @@ layout: mail-layout
       </tr>
     </table>
     <spacer size="40"></spacer>
-    {{#each comments}}
-      <table>
-        <tr>
-          <td style="width: 55px;">
-            <img class="avatar-image" style="border-radius: 50%;" src="{{this.avatar_url}}" />
-          </td>
-          <td>
-            <span style="color: #15181F;">@{{this.username}}</span> <span class="c-waterloo">{{#if this.reply_to_text}}replied{{else}}commented{{/if}} on your</span> <a href="{{this.link}}" target="_blank">"{{this.title}}"</a>
-            <spacer size="10"></spacer>
-            <p class="comment-text body-2">{{this.comment_text}}</p>
-            <a href="{{this.link}}" target="_blank" style="margin-left: 12px;">Reply</a>
-          </td>
-        </tr>
-      </table>
-      {{#unless @last}}
-        <spacer size="32"></spacer>
-        <hr class="entitySeprator" />
-        <spacer size="32"></spacer>
-      {{/unless}}
-    {{/each}}
+    {{{{raw}}}}
+      {{#each comments}}
+        <table>
+          <tr>
+            <td style="width: 55px;">
+              <img class="avatar-image" style="border-radius: 50%;" src="{{this.avatar_url}}" />
+            </td>
+            <td>
+              <span style="color: #15181F;">@{{this.username}}</span> <span class="c-waterloo">{{#if this.reply_to_text}}replied{{else}}commented{{/if}} on your</span> <a href="{{this.link}}" target="_blank">"{{this.title}}"</a>
+              <p class="comment-text body-2">{{this.comment_text}}</p>
+              <a href="{{this.link}}" target="_blank" style="margin-left: 12px;">Reply</a>
+            </td>
+          </tr>
+        </table>
+        {{#unless @last}}
+          <spacer size="32"></spacer>
+          <hr class="entitySeprator" />
+          <spacer size="32"></spacer>
+        {{/unless}}
+      {{/each}}
+    {{{{/raw}}}}
     <spacer size="44"></spacer>
   </container>
+{{{{raw}}}}
 {{/if}}
+{{{{/raw}}}}
 
+{{{{raw}}}}
 {{#if likes_count}}
+{{{{/raw}}}}
   <spacer size="4"></spacer>
 
   <container class="radius">
@@ -69,26 +76,30 @@ layout: mail-layout
       </tr>
     </table>
     <spacer size="40"></spacer>
-    {{#each likes}}
-      <table>
-        <tr>
-          <td style="width: 55px;">
-            <img class="avatar-image" style="border-radius: 50%;" src="{{this.avatar_url}}" />
-          </td>
-          <td>
-            <span style="color: #15181F;">@{{this.username}}</span> <span class="c-waterloo">likes your {{this.entity}}</span> <a href="{{this.link}}" target="_blank">"{{this.title}}"</a>
-            <spacer size="10"></spacer>
-          </td>
-        </tr>
-      </table>
-      {{#unless @last}}
-        <spacer size="32"></spacer>
-        <hr class="entitySeprator" />
-        <spacer size="32"></spacer>
-      {{/unless}}
-    {{/each}}
+    {{{{raw}}}}
+      {{#each likes}}
+        <table>
+          <tr>
+            <td style="width: 55px;">
+              <img class="avatar-image" style="border-radius: 50%;" src="{{this.avatar_url}}" />
+            </td>
+            <td>
+              <span style="color: #15181F;">@{{this.username}}</span> <span class="c-waterloo">likes your {{this.entity}}</span> <a href="{{this.link}}" target="_blank">"{{this.title}}"</a>
+              <spacer size="10"></spacer>
+            </td>
+          </tr>
+        </table>
+        {{#unless @last}}
+          <spacer size="32"></spacer>
+          <hr class="entitySeprator" />
+          <spacer size="32"></spacer>
+        {{/unless}}
+      {{/each}}
+    {{{{/raw}}}}
     <spacer size="44"></spacer>
   </container>
+{{{{raw}}}}
 {{/if}}
+{{{{/raw}}}}
 
 {{> mail-footer-auto}}
