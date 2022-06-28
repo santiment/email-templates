@@ -5,10 +5,10 @@ layout: mail-layout
 <container class="radius">
   <spacer size="16"></spacer>
   <h3 class="h1 c-black">
-    You have *|comments_count|* new comments and *|likes_count|* new likes
+    You have {{{{raw}}}}{{comments_count}}{{{{/raw}}}} new comments and {{{{raw}}}}{{likes_count}}{{{{/raw}}}} new likes
   </h3>
   <spacer size="16"></spacer>
-  <p class="body-1 c-black">👋 Hey, *|username|* </p>
+  <p class="body-1 c-black">👋 Hey, {{{{raw}}}}{{username}}{{{{/raw}}}} </p>
   <p class="body-1 c-black">Here’s some activities you could miss on Santiment.</p>
   <spacer size="40"></spacer>
 </container>
@@ -39,7 +39,7 @@ layout: mail-layout
               <img class="avatar-image" style="border-radius: 50%;" src="{{this.avatar_url}}" />
             </td>
             <td>
-              <span style="color: #15181F;">@{{this.username}}</span> <span class="c-waterloo">{{#if this.reply_to_text}}replied{{else}}commented{{/if}} on your</span> <a href="{{this.link}}" target="_blank">"{{this.title}}"</a>
+              <span style="color: #15181F;">{{this.username}}</span> <span class="c-waterloo">{{#if this.reply_to_text}}replied{{else}}commented{{/if}} on your</span> <a href="{{this.link}}" target="_blank">"{{this.title}}"</a>
               <p class="comment-text body-2">{{this.comment_text}}</p>
               <a href="{{this.link}}" target="_blank" style="margin-left: 12px;">Reply</a>
             </td>
@@ -84,7 +84,7 @@ layout: mail-layout
               <img class="avatar-image" style="border-radius: 50%;" src="{{this.avatar_url}}" />
             </td>
             <td>
-              <span style="color: #15181F;">@{{this.username}}</span> <span class="c-waterloo">likes your {{this.entity}}</span> <a href="{{this.link}}" target="_blank">"{{this.title}}"</a>
+              <span style="color: #15181F;">{{this.usernames}}</span> {{#if this.rest}} and {{this.rest}} more {{/if}} <span class="c-waterloo">like your {{this.entity}}</span> <a href="{{this.link}}" target="_blank">"{{this.title}}"</a>
               <spacer size="10"></spacer>
             </td>
           </tr>
