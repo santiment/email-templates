@@ -1,5 +1,6 @@
 ---
 layout: mail-layout
+image-url: https://api.santiment.net/images/emails/
 ---
 
 <container class="radius">
@@ -84,7 +85,7 @@ layout: mail-layout
               <img class="avatar-image" style="border-radius: 50%;" src="{{this.avatar_url}}" />
             </td>
             <td>
-              <span style="color: #15181F;">{{this.usernames}}</span> {{#if this.rest}} and {{this.rest}} more {{/if}} <span class="c-waterloo">like your {{this.entity}}</span> <a href="{{this.link}}" target="_blank">"{{this.title}}"</a>
+              <span style="color: #15181F;">{{this.usernames}} {{#if this.rest}} and {{this.rest}} others {{/if}}</span> <span class="c-waterloo">like your {{this.entity}}</span> <a href="{{this.link}}" target="_blank">"{{this.title}}"</a>
               <spacer size="10"></spacer>
             </td>
           </tr>
