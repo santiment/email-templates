@@ -8,14 +8,14 @@ image-url: https://api.santiment.net/images/emails/
     <spacer size="16"></spacer>
     <row class="collapse">
         <columns small="12">
-            <span mc:edit="header" class="h1 c-black">✨ Enjoy your *|SUBSCRIPTION_TYPE|*!</span>
+            <span mc:edit="header" class="h1 c-black">✨ Enjoy your {{{{raw}}}}{{var:subscription_type}}{{{{/raw}}}}!</span>
 
             <spacer size="24"></spacer>
 
             <p mc:edit="mail-description" class="body-1 c-black m-0">
-                Hey, *|username|*<br />
+                Hey, {{{{raw}}}}{{var:username}}{{{{/raw}}}}<br />
                 <br />
-                We have upgraded your account to <b>*|SUBSCRIPTION_TYPE|*</b> for the next <b>*|SUBSCRIPTION_DURATION|*</b>.<br>
+                We have upgraded your account to <b>{{{{raw}}}}{{var:subscription_type}}{{{{/raw}}}}</b> for the next <b>{{{{raw}}}}{{var:subscription_duration}}{{{{/raw}}}}</b>.<br>
                 <br />
                 Enjoy all extra features Sanbase currently provides. We can’t wait to show you everything we have to offer.
             </p>

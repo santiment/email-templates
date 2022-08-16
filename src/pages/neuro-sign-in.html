@@ -1,0 +1,40 @@
+---
+layout: mail-layout
+image-url: https://api.santiment.net/images/emails/
+---
+
+<container class="radius">
+    <row class="collapse">
+        <columns small="12">
+            <img src="{{image-url}}logo-neuro.png" style="width: 122px;">
+
+            <spacer size="24"></spacer>
+
+            <h1 class="h1">Welcome back!</h1>
+            
+            <spacer size="16"></spacer>
+
+            <p class="body-1">Neuro doesn't make you remember yet another password. Just click the link below and you’re in.</p>
+
+            <spacer size="24"></spacer>
+
+            <a href="{{{{raw}}}}{{var:login_link}}{{{{/raw}}}}" class="bluebtn">Confirm sign in</a>
+
+            <spacer size="32"></spacer>
+
+            <p class="body-1 c-waterloo">For security reasons, this link will expire in 6 hours, and can only be used one time.</p>
+
+            <spacer size="12"></spacer>
+
+            <p class="body-1 c-waterloo">You can copy/paste this link into your browser<br /><a class="bluelink" href="{{{{raw}}}}{{var:login_link}}{{{{/raw}}}}">{{{{raw}}}}{{var:login_link}}{{{{/raw}}}}</a></p>
+
+            <spacer size="32"></spacer>
+
+            {{> regards }}
+
+            <spacer size="26"></spacer>
+        </columns>
+    </row>
+</container>
+
+{{> mail-footer-auto}}

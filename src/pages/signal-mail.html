@@ -10,12 +10,12 @@ image-url: https://api-stage.santiment.net/images/emails/
   <row>
     <columns small="12">
 
-      <span mc:edit="header" class="h1 c-black">Hey, *|username|* </span>
+      <span mc:edit="header" class="h1 c-black">Hey, {{{{raw}}}}{{var:username}}{{{{/raw}}}} </span>
       
       <spacer size="16"></spacer>
 
       <div>
-        *|payload|*
+        {{{{raw}}}}{{var:payload}}{{{{/raw}}}}
       </div>
 
       <spacer size="48"></spacer>

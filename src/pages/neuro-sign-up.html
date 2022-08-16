@@ -1,48 +1,48 @@
 ---
-layout: default
-subject: Thanks for signing up!
-description: It's nice to have you on board, together we are crossing the sea from centralized to decentralized world, from uncertainty to clarity, from too much noise to the "I get only what I need when I need".
-image-url: https://api-stage.santiment.net/images/emails/
+layout: mail-layout
+image-url: https://api.santiment.net/images/emails/
 ---
 
-{{>header}}
-
 <container class="radius">
+    <row class="collapse">
+        <columns small="12">
+            <img src="{{image-url}}logo-neuro.png" style="width: 122px;">
 
-  <spacer size="26"></spacer>
+            <spacer size="24"></spacer>
 
-  <row>
-    <columns small="12">
+            <h1 class="h1">Welcome to Neuro!</h1>
+            
+            <spacer size="16"></spacer>
 
-      <center>
-        <img src="{{image-url}}neuro_sign_up.png" alt="" />
-      </center>
+            <p class="body-1">Thanks for signing up. We are happy you are here.</p>
 
-      <spacer size="30"></spacer>
+            <spacer size="12"></spacer>
 
-      {{>title-and-desc}}
+            <p class="body-1">Neuro doesn't make you remember yet another password. Just click the link below to sign in your account.</p>
 
-      <p mc:edit="text_2">
-        That's pretty long way to get to the final destination. But as every big journey, it starts with the first step.Which you've just made.
-      </p>
+            <spacer size="24"></spacer>
 
-      <p>
-        Your account has just been created. Click the button to sign in.
-      </p>
+            <a href="{{{{raw}}}}{{var:login_link}}{{{{/raw}}}}" class="bluebtn">Sign in to Neuro</a>
 
-      <spacer size="8"></spacer>
+            <spacer size="32"></spacer>
 
-      <button class="expand radius" href="*|HTML:LOGIN_LINK|*" target="_blank">
-        <span mc:edit="button_text">Sign in to Neuro</span>
-      </button>
+            <p class="body-1">Please <a href="https://academy.santiment.net/san-tokens/how-to-stake-san/#logging-into-sanbase-using-metamask" class="bluelink">connect Metamask</a> to open more possibilities.</p>
 
-      <p mc:edit="text_5">You may find the <a href="https://help.santiment.net/en/" target="_blank">Knowledge base page</a> helpful if you just want to explore our product more with no development required.</p>
+            <spacer size="12"></spacer>
 
-      <spacer size="12"></spacer>
+            <p class="body-1">We recommend to check out <a href="https://academy.santiment.net/for-developers/" class="bluelink">Documentation</a> once you're ready to start integrating Neuro.</p>
 
-      {{>regards}}
-    </columns>
-  </row>
+            <spacer size="12"></spacer>
+
+            <p class="body-1">You may find the <a href="https://academy.santiment.net/sanapi/" class="bluelink">Resources</a> page helpful if you just want to explore our product more with no development required.</p>
+
+            <spacer size="32"></spacer>
+
+            {{> regards }}
+
+            <spacer size="26"></spacer>
+        </columns>
+    </row>
 </container>
-{{>footer}}
 
+{{> mail-footer-auto}}

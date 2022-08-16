@@ -8,12 +8,12 @@ image-url: https://api.santiment.net/images/emails/
     <spacer size="16"></spacer>
     <row class="collapse">
         <columns small="12">
-            <span mc:edit="header" class="h1 c-black">🛑 You’ve canceled your *|subscription_type|*</span>
+            <span mc:edit="header" class="h1 c-black">🛑 You’ve canceled your {{{{raw}}}}{{var:subscription_type}}{{{{/raw}}}}</span>
 
             <spacer size="24"></spacer>
 
             <p mc:edit="mail-description" class="body-1 c-black m-0">
-                Your *|subscription_type|* subscription is active until <span class="txt-m">*|end_subscription_date|*</span>
+                Your {{{{raw}}}}{{var:subscription_type}}{{{{/raw}}}} subscription is active until <span class="txt-m">{{{{raw}}}}{{var:subscription_enddate}}{{{{/raw}}}}</span>
             </p>
 
             <spacer size="48"></spacer>

@@ -8,7 +8,7 @@ image-url: https://api.santiment.net/images/emails/
     <spacer size="16"></spacer>
     <row class="collapse">
         <columns small="12">
-            <span mc:edit="header" class="h1 c-black">Hi, *|name|* </span>
+            <span mc:edit="header" class="h1 c-black">Hi, {{{{raw}}}}{{var:name}}{{{{/raw}}}} </span>
 
             <spacer size="24"></spacer>
 
@@ -31,7 +31,7 @@ image-url: https://api.santiment.net/images/emails/
 
             <p class="c-waterloo">
                 *You can use this discount only while<br>
-                you are on a free trial <b>(until *|end_subscription_date|* ).</b>
+                you are on a free trial <b>(until {{{{raw}}}}{{var:end_subscription_date}}{{{{/raw}}}}).</b>
             </p>
 
             <spacer size="48"></spacer>
