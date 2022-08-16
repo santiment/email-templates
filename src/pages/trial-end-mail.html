@@ -7,18 +7,18 @@ image-url: https://api.santiment.net/images/emails/
 <container class="radius">
     <row class="collapse">
         <columns small="12">
-            <span mc:edit="header" class="h1 c-black">👋 Hi, *|name|*</span>
+            <span mc:edit="header" class="h1 c-black">👋 Hi, {{{{raw}}}}{{var:name}}{{{{/raw}}}}</span>
 
             <spacer size="24"></spacer>
 
             <p mc:edit="mail-description-1" class="body-1 c-black m-0">
-                Your *|SUBSCRIPTION_TYPE|* trial <b class="txt-m">ends in 3 days.</b>
+                Your {{{{raw}}}}{{var:subscription_type}}{{{{/raw}}}} trial <b class="txt-m">ends in 3 days.</b>
             </p>
 
             <spacer size="12"></spacer>
 
             <p mc:edit="mail-description-2" class="body-1 c-black m-0">
-                Moving forward you will be charged automatically on a *|SUBSCRIPTION_DURATION|* basis according to your plan.
+                Moving forward you will be charged automatically on a {{{{raw}}}}{{var:subscription_duration}}{{{{/raw}}}} basis according to your plan.
             </p>
 
             <spacer size="12"></spacer>
@@ -30,7 +30,7 @@ image-url: https://api.santiment.net/images/emails/
             <spacer size="12"></spacer>
 
             <p mc:edit="mail-description-4" class="body-1 c-black m-0">
-                The following is available to you as a *|SUBSCRIPTION_TYPE|* user:
+                The following is available to you as a {{{{raw}}}}{{var:subscription_type}}{{{{/raw}}}} user:
             </p>
 
             <spacer size="16"></spacer>

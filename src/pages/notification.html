@@ -6,16 +6,16 @@ image-url: https://api.santiment.net/images/emails/
 <container class="radius">
   <spacer size="16"></spacer>
   <h3 class="h1 c-black">
-    You have {{{{raw}}}}{{comments_count}}{{{{/raw}}}} new comments and {{{{raw}}}}{{likes_count}}{{{{/raw}}}} new likes
+    You have {{{{raw}}}}{{var:comments_count}}{{{{/raw}}}} new comments and {{{{raw}}}}{{var:likes_count}}{{{{/raw}}}} new likes
   </h3>
   <spacer size="16"></spacer>
-  <p class="body-1 c-black">👋 Hey, {{{{raw}}}}{{username}}{{{{/raw}}}} </p>
+  <p class="body-1 c-black">👋 Hey, {{{{raw}}}}{{var:username}}{{{{/raw}}}} </p>
   <p class="body-1 c-black">Here’s some activities you could miss on Santiment.</p>
   <spacer size="40"></spacer>
 </container>
 
 {{{{raw}}}}
-{{#if comments_count}}
+{% if var:comments_count > 0 %}
 {{{{/raw}}}}
   <spacer size="4"></spacer>
 
@@ -33,34 +33,30 @@ image-url: https://api.santiment.net/images/emails/
     </table>
     <spacer size="40"></spacer>
     {{{{raw}}}}
-      {{#each comments}}
+      {% for comment in var:comments %}
         <table>
           <tr>
             <td style="width: 55px;">
-              <img class="avatar-image" style="border-radius: 50%;" src="{{this.avatar_url}}" />
+              <img class="avatar-image" style="border-radius: 50%;" src="{{comment.avatar_url}}" />
             </td>
             <td>
-              <span style="color: #15181F;">{{this.username}}</span> <span class="c-waterloo">{{#if this.reply_to_text}}replied{{else}}commented{{/if}} on your</span> <a href="{{this.link}}" target="_blank">"{{this.title}}"</a>
-              <p class="comment-text body-2">{{this.comment_text}}</p>
-              <a href="{{this.link}}" target="_blank" style="margin-left: 12px;">Reply</a>
+              <span style="color: #15181F;">{{comment.username}}</span> <span class="c-waterloo">{% if comment.reply_to_text}}replied{% else %}commented{% endif %} on your</span> <a href="{{comment.link}}" target="_blank">"{{comment.title}}"</a>
+              <p class="comment-text body-2">{{comment.comment_text}}</p>
+              <a href="{{comment.link}}" target="_blank" style="margin-left: 12px;">Reply</a>
             </td>
           </tr>
         </table>
-        {{#unless @last}}
-          <spacer size="32"></spacer>
-          <hr class="entitySeprator" />
-          <spacer size="32"></spacer>
-        {{/unless}}
-      {{/each}}
+        <spacer size="32"></spacer>
+      {% endfor %}
     {{{{/raw}}}}
     <spacer size="44"></spacer>
   </container>
 {{{{raw}}}}
-{{/if}}
+{% endif %}
 {{{{/raw}}}}
 
 {{{{raw}}}}
-{{#if likes_count}}
+{% if var:likes_count > 0 %}
 {{{{/raw}}}}
   <spacer size="4"></spacer>
 
@@ -78,29 +74,25 @@ image-url: https://api.santiment.net/images/emails/
     </table>
     <spacer size="40"></spacer>
     {{{{raw}}}}
-      {{#each likes}}
+      {% for like in var:likes %}
         <table>
           <tr>
             <td style="width: 55px;">
-              <img class="avatar-image" style="border-radius: 50%;" src="{{this.avatar_url}}" />
+              <img class="avatar-image" style="border-radius: 50%;" src="{{like.avatar_url}}" />
             </td>
             <td>
-              <span style="color: #15181F;">{{this.usernames}} {{#if this.rest}} and {{this.rest}} others {{/if}}</span> <span class="c-waterloo">like your {{this.entity}}</span> <a href="{{this.link}}" target="_blank">"{{this.title}}"</a>
+              <span style="color: #15181F;">{{like.usernames}} {% if like.rest %} and {{like.rest}} others {% endif %}</span> <span class="c-waterloo">like your {{like.entity}}</span> <a href="{{like.link}}" target="_blank">"{{like.title}}"</a>
               <spacer size="10"></spacer>
             </td>
           </tr>
         </table>
-        {{#unless @last}}
-          <spacer size="32"></spacer>
-          <hr class="entitySeprator" />
-          <spacer size="32"></spacer>
-        {{/unless}}
-      {{/each}}
+        <spacer size="32"></spacer>
+      {% endfor %}
     {{{{/raw}}}}
     <spacer size="44"></spacer>
   </container>
 {{{{raw}}}}
-{{/if}}
+{% endif %}
 {{{{/raw}}}}
 
 {{> mail-footer-auto}}

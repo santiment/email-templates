@@ -13,9 +13,9 @@ image-url: https://api.santiment.net/images/emails/
             <spacer size="24"></spacer>
 
             <p mc:edit="mail-description" class="body-1 c-black m-0">
-                Hey, *|username|*<br />
+                Hey, {{{{raw}}}}{{var:username}}{{{{/raw}}}}<br />
                 <br />
-                We have upgraded your account to <b>*|SUBSCRIPTION_TYPE|*</b> for the next <b>14 days</b>.<br />
+                We have upgraded your account to <b>{{{{raw}}}}{{var:subscription_type}}{{{{/raw}}}}</b> for the next <b>14 days</b>.<br />
                 <br />
                 Enjoy all extra features Sanbase currently provides. As a new user we want you to see everything we have to offer.
             </p>
