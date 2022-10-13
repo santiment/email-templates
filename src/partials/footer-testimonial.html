@@ -1,5 +1,6 @@
 <spacer size="32"></spacer>
 
+<div class="hidemobile">
 {{#ifpage '50-percent-discount-offer'}}
     <img class="testimonial" src="https://mcusercontent.com/122a728fd98df22b204fa533c/images/c6042603-2137-819c-b217-9d8c5f795297.png" >
 {{/ifpage}}
@@ -7,4 +8,26 @@
 {{#ifpage '35-percent-discount-offer'}}
     <img class="testimonial" src="https://mcusercontent.com/122a728fd98df22b204fa533c/images/be3f45e9-10b7-cb8e-a2e6-427ec2dce702.png" >
 {{/ifpage}}
+</div>
 
+<div class="showmobile">
+    <div class="quote">
+        <img src="{{image-url}}quote.png">
+
+        {{#ifpage '50-percent-discount-offer'}}
+            <p>
+                Santiment offers a sleek UI with a robust toolset that can replace what would otherwise require multiple platforms and at times manual charting. This tool offers extreme value for its price and is a excellent tool for anyone in this space!
+            </p>
+            <div class="qname">James Slattery</div>
+            <div class="qfrom">Blockchain Chicago</div>
+        {{/ifpage}}
+        
+        {{#ifpage '35-percent-discount-offer'}}
+            <p>
+                The platform has already paid for itself. So far I'm finding the best use case for the data here is to confirm likely tops and bottoms in alts, I hope to learn more about spotting changes in overall market direction using this data over the coming months.
+            </p>
+            <div class="qname">qz255</div>
+            <div class="qfrom">Sanbase user</div>
+        {{/ifpage}}
+    </div>
+</div>

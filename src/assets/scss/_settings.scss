@@ -36,7 +36,7 @@ $global-rounded: 500px;
 $global-breakpoint: $global-width + $global-gutter;
 
 /* Large only */
-@media only screen and (min-width: #{$global-breakpoint}) {
+@media (min-width:#{$global-breakpoint}) {
 	.container {
 		padding-left: 44px !important;
 		padding-right: 44px !important;
@@ -108,7 +108,7 @@ $stat-font-size: 40px;
 
 
 /* Small only */
-@media only screen and (max-width: #{$global-breakpoint}) {
+@media (max-width:#{$global-breakpoint}) {
 	.small {
 		font-size: 80% !important;
 	}

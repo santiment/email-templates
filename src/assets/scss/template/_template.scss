@@ -67,20 +67,20 @@ table.button.radius table td {
   border-top-right-radius: 4px !important;
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width:600px) {
   table.body .container {
     width: 95% !important;
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media (min-width:600px) {
   .container {
     padding-left: 48px !important;
     padding-right: 48px !important;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width:600px) {
   table.body .collapse > tbody > tr > .columns, table.body .collapse > tbody > tr > .column {
     padding-left: 12px !important;
     padding-right: 12px !important;
@@ -162,7 +162,7 @@ table.button table td a {
 
 // Social Media
 .social {
-  height: 13px !important;
+  height: 13px;
   float: right;
 }
 
@@ -331,4 +331,110 @@ a {
   vertical-align: middle;
   text-align: center;
   width: 25%;
+}
+
+.quote {
+  background: #EDF8F5;
+  border-radius: 8px;
+  padding: 40px 32px;
+  text-align: left;
+}
+
+.quote img {
+  width: 36px;
+  max-width: 100%;
+  margin-bottom: 24px;
+}
+
+.quote p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2F354D;
+  margin-bottom: 10px;
+}
+
+.quote .qname {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  color: #181B2B;
+}
+
+.quote .qfrom {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #7A859E;
+}
+
+.showmobile {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .hidemobile {
+      display: none !important;
+  }
+
+  .showmobile {
+      display: block !important;
+  }
+
+  .container {
+      padding-left: 32px !important;
+      padding-right: 32px !important;
+  }
+
+  .h1 {
+      font-size: 36px !important;
+  }
+
+  table.body .container {
+      width: 100% !important;
+  }
+
+  .body-1, .body-2 {
+      font-size: 18px !important;
+  }
+
+  table.button, table.button table {
+      width: 100% !important;
+  }
+
+  table.button table td a {
+      display: block !important;
+      text-align: center !important;
+      font-weight: 500 !important;
+      font-size: 18px !important;
+  }
+
+  .footer span.body-2 {
+      font-weight: 400 !important;
+      font-size: 16px !important;
+      line-height: 24px !important;
+  }
+
+  img.mail-list-check {
+      height: 21px !important;
+  }
+
+  .mail-list span {
+      max-width: 400px !important;
+  }
+
+  body, table.body, p, td, th {
+      font-weight: 400 !important;
+      font-size: 18px !important;
+      line-height: 24px !important;
+  }
+
+  .social {
+      height: 32px !important;
+      float: none !important;
+  }
 }

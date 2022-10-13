@@ -151,7 +151,7 @@
 	margin-left: auto;
 }
 
-@media only screen and (max-width: 540px) {
+@media (max-width:540px) {
 	.main-info .image {
 		display: none;
 	}
@@ -181,7 +181,7 @@
   margin-left: 50px;
 }
 
-@media only screen and (max-width: 540px) {
+@media (max-width:540px) {
 	.notification-text {
 	  margin-top: 10px !important;
 	  margin-left: 0 !important;
