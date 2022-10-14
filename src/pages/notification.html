@@ -36,13 +36,13 @@ image-url: https://api.santiment.net/images/emails/
       {% for comment in var:comments %}
         <table>
           <tr>
-            <td style="width: 55px;">
-              <img class="avatar-image" style="border-radius: 50%;" src="{{comment.avatar_url}}" />
+            <td class="w-55">
+              <img class="avatar-image rounded" src="{{comment.avatar_url}}" />
             </td>
             <td>
-              <span style="color: #15181F;">{{comment.username}}</span> <span class="c-waterloo">{% if comment.reply_to_text}}replied{% else %}commented{% endif %} on your</span> <a href="{{comment.link}}" target="_blank">"{{comment.title}}"</a>
+              <span class="c-dark-blue">{{comment.username}}</span> <span class="c-waterloo">{% if comment.reply_to_text}}replied{% else %}commented{% endif %} on your</span> <a href="{{comment.link}}" target="_blank">"{{comment.title}}"</a>
               <p class="comment-text body-2">{{comment.comment_text}}</p>
-              <a href="{{comment.link}}" target="_blank" style="margin-left: 12px;">Reply</a>
+              <a href="{{comment.link}}" target="_blank" class="mr-12">Reply</a>
             </td>
           </tr>
         </table>
@@ -77,11 +77,11 @@ image-url: https://api.santiment.net/images/emails/
       {% for like in var:likes %}
         <table>
           <tr>
-            <td style="width: 55px;">
-              <img class="avatar-image" style="border-radius: 50%;" src="{{like.avatar_url}}" />
+            <td class="w-55">
+              <img class="avatar-image rounded" src="{{like.avatar_url}}" />
             </td>
             <td>
-              <span style="color: #15181F;">{{like.usernames}} {% if like.rest %} and {{like.rest}} others {% endif %}</span> <span class="c-waterloo">like your {{like.entity}}</span> <a href="{{like.link}}" target="_blank">"{{like.title}}"</a>
+              <span class="c-dark-blue">{{like.usernames}} {% if like.rest %} and {{like.rest}} others {% endif %}</span> <span class="c-waterloo">like your {{like.entity}}</span> <a href="{{like.link}}" target="_blank">"{{like.title}}"</a>
               <spacer size="10"></spacer>
             </td>
           </tr>

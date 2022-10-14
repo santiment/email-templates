@@ -35,18 +35,6 @@ $global-radius: 4px;
 $global-rounded: 500px;
 $global-breakpoint: $global-width + $global-gutter;
 
-/* Large only */
-@media (min-width:#{$global-breakpoint}) {
-	.container {
-		padding-left: 44px !important;
-		padding-right: 44px !important;
-	}
-
-	.container.footer {
-		width: 510px !important;
-	}
-}
-
 .gray {
 	color: $medium-gray;
 }
@@ -105,14 +93,6 @@ $anchor-color-visited: $anchor-color;
 $anchor-color-hover: darken($primary-color, 7%);
 $anchor-color-active: $anchor-color-hover;
 $stat-font-size: 40px;
-
-
-/* Small only */
-@media (max-width:#{$global-breakpoint}) {
-	.small {
-		font-size: 80% !important;
-	}
-}
 
 // 5. Button
 // ---------

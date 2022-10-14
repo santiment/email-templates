@@ -4,7 +4,7 @@ image-url: https://api-stage.santiment.net/images/emails/
 ---
 
 {{>header}}
-<container class="main-info radius" style="background-color: #14C393;">
+<container class="main-info radius bg-green">
   <center>
     <spacer size="40"></spacer>
     <row valign="middle">
@@ -13,7 +13,7 @@ image-url: https://api-stage.santiment.net/images/emails/
         <h3 class='title'>Your weekly updates!</h3>
         <p class='description'>Hey there, power user ⚡. See insights based on your watchlists below:</p>
       </columns>
-      <columns large='5' small="0" class='image' style="vertical-align: middle" >
+      <columns large='5' small="0" class='image valign-middle'>
         <img src="{{image-url}}calendar.png" width="170px" class='calendar-image' alt=""  align="center" />
       </columns>
     </row>
@@ -27,17 +27,17 @@ image-url: https://api-stage.santiment.net/images/emails/
     <columns small="12">
       <center>
       <spacer size="32"></spacer>
-      <h4 mc:edit="header-1" class='text-center'>Your monitored watchlists</h4>
+      <h4 class='text-center'>Your monitored watchlists</h4>
       <spacer size="4"></spacer>
       <row  class="collapse">
         <columns vailgn='center'>
-          <p style='margin: 0; text-align: center;' class='small-text-center watchlists'>
+          <p class='small-text-center watchlists m-0 text-center'>
             <!-- watchlists -->
           {{>watchlist}}
           {{>watchlist}}
           <!-- / watchlists -->
           <!--if new_watchlist -->
-          <span class="watchlist" style='text-align: center;'>
+          <span class="watchlist text-center">
             <img src="{{image-url}}new.png" class="watchlist-new-img" />
             <a href="https://app.santiment.net/assets" target="_blank" rel="noopener noreferrer" class="watchlist-link-new">
               Add new watchlist
@@ -63,7 +63,7 @@ image-url: https://api-stage.santiment.net/images/emails/
     <spacer size="32"></spacer>
     <row>
       <columns large="10" small="8">
-        <h4 mc:edit="header-2">Related insights</h4>
+        <h4>Related insights</h4>
       </columns>
       <columns large="2" small="4">
         <p class="small-text-right">

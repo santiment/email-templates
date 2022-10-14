@@ -11,6 +11,8 @@ import siphon   from 'siphon-media-query';
 import path     from 'path';
 import merge    from 'merge-stream';
 import beep     from 'beepbeep';
+import replace  from 'gulp-string-replace';
+
 
 const $ = plugins();
 
@@ -94,8 +96,16 @@ function images() {
 
 // Inline CSS and minify HTML
 function inline() {
+  let options = {
+    logs: {
+      enabled: false
+    }
+  };  
   return gulp.src('dist/**/*.html')
     .pipe($.if(PRODUCTION, inliner('dist/css/app.css')))
+    .pipe(replace(/width\:auto(!important)?;?/g, "", options))
+    .pipe(replace(/max\-width\:100\%;?/g, "", options))
+    // .pipe(replace(/width:100%(!important)?;?/g, "", options))
     .pipe(gulp.dest('dist'));
 }
 
@@ -122,10 +132,10 @@ function inliner(css) {
 
   var pipe = lazypipe()
     .pipe($.inlineCss, {
-      applyStyleTags: false,
-      removeStyleTags: true,
+      applyStyleTags: true,
+      removeStyleTags: false,
       preserveMediaQueries: true,
-      removeLinkTags: false
+      removeLinkTags: false,
     })
     .pipe($.replace, '<!-- <style> -->', `<style>${mqCss}</style>`)
     .pipe($.replace, '<link rel="stylesheet" type="text/css" href="css/app.css">', '')

@@ -7,33 +7,33 @@ image-url: https://api.santiment.net/images/emails/
 <container class="radius">
     <row class="collapse">
         <columns small="12">
-            <span mc:edit="header" class="h1 c-black">👋 Thanks for signing-up!</span>
+            <span  class="h1 c-black">👋 Thanks for signing-up!</span>
 
             <spacer size="24"></spacer>
 
-            <p mc:edit="mail-description-1" class="body-1 c-black m-0">
+            <p  class="body-1 c-black m-0">
                 We’re excited you’ve joined us!
             </p>
             <spacer size="12"></spacer>
-            <p mc:edit="mail-description-2" class="body-1 c-black m-0">
+            <p  class="body-1 c-black m-0">
                 As a little necessary step, please confirm your registration below.
             </p>
 
             <spacer size="32"></spacer>
 
             <button class="radius" href="{{{{raw}}}}{{var:login_link}}{{{{/raw}}}}" target="_blank">
-                <span mc:edit="button_text">Confirm Registration</span>
+                <span >Confirm Registration</span>
             </button>
 
             <spacer size="32"></spacer>
 
-            <span mc:edit="mail-additional-description" class="body-2 c-waterloo">
+            <span  class="body-2 c-waterloo">
                 *For security reasons, this link will expire in 1 hour. In case the button above doesn’t work, you can copy/paste this link into your browser:
             </span>
 
             <spacer size="16"></spacer>
 
-            <a mc:edit="mail-link" href="{{{{raw}}}}{{var:login_link}}{{{{/raw}}}}" target='_blank' class="body-1 c-black m-0 c-green">
+            <a  href="{{{{raw}}}}{{var:login_link}}{{{{/raw}}}}" target='_blank' class="body-1 c-black m-0 c-green">
                 {{{{raw}}}}{{var:login_link}}{{{{/raw}}}}
             </a>
 
