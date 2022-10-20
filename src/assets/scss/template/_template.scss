@@ -119,7 +119,8 @@ table.button.radius table td {
 }
 
 .mail-regards-logo {
-  height: 24px !important;
+  width: 88px;
+  height: 24px;
 }
 
 table.button {
@@ -244,6 +245,7 @@ a {
 }
 
 table.footer {
+  margin-top: 32px;
   margin-bottom: 48px;
 }
 
@@ -413,10 +415,6 @@ table.footer .footer-mb {
       padding-right: 16px !important;
   }
 
-  .h1 {
-      font-size: 36px !important;
-  }
-
   table.body .collapse > tbody > tr > .columns, table.body .collapse > tbody > tr > .column {
     padding: 0 !important;
   }
@@ -426,6 +424,7 @@ table.footer .footer-mb {
       text-align: center !important;
       font-weight: 500 !important;
       font-size: 18px !important;
+      padding: 12px 20px !important;
   }
 
   .footer span.body-2 {
@@ -450,7 +449,7 @@ table.footer .footer-mb {
     font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    white-space: initial;
+    white-space: normal;
   }
 
   .footer .collapse span {
@@ -479,5 +478,10 @@ table.footer .footer-mb {
 
   table.body .container {
     width: 100% !important;
+  }
+
+  .mail-regards-logo {
+    width: 107px !important;
+    height: 32px !important;
   }
 }
