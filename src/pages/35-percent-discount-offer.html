@@ -5,7 +5,6 @@ image-url: https://api.santiment.net/images/emails/
 ---
 
 <container class="radius">
-    <spacer size="16"></spacer>
     <row class="collapse">
         <columns small="12">
             <span class="h1 c-black">Hi, {{{{raw}}}}{{var:name}}{{{{/raw}}}} </span>
@@ -29,16 +28,12 @@ image-url: https://api.santiment.net/images/emails/
 
             <spacer size="48"></spacer>
 
-            <p class="c-waterloo">
+            <p class="body-1 c-waterloo">
                 *The offer stands until your first month<br>
                 of paid membership runs out <b>{{{{raw}}}}{{var:date}}{{{{/raw}}}}</b>. 
             </p>
 
-            <spacer size="48"></spacer>
-
             {{> san-fam-regards}}
-
-            <spacer size="26"></spacer>
         </columns>
     </row>
 </container>
