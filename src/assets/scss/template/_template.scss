@@ -121,6 +121,7 @@ table.button.radius table td {
 .mail-regards-logo {
   width: 88px;
   height: 24px;
+  margin-top: 8px;
 }
 
 table.button {
@@ -397,6 +398,19 @@ table.footer .footer-mb {
   display: none;
 }
 
+.testibox {
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+
+.main-body table.container {
+  padding: 48px 48px 32px 48px;
+}
+
+.sanfam {
+  margin-top: 40px;
+}
+
 @media (max-width:#{$global-breakpoint}) {
   .small {
 		font-size: 80% !important;
@@ -434,30 +448,34 @@ table.footer .footer-mb {
   }
   
   .footer .radius {
-    padding: 40px 24px;
+    padding: 40px 24px !important;
   }
   
   .footer .footer-logo {
-    margin-bottom: 24px;
+    margin-bottom: 24px !important;
+  }
+
+  table.footer {
+    margin-top: 0 !important;
   }
 
   table.footer .footer-mb {
-    margin-bottom: 32px;
+    margin-bottom: 32px !important;
   }
 
   .footer p {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    white-space: normal;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    white-space: normal !important;
   }
 
   .footer .collapse span {
-    margin-bottom: 6px;
+    margin-bottom: 6px !important;
   }
 
   .footer .collapse a {
-    text-align: left;
+    text-align: left !important;
   }
 
   img.mail-list-check {
@@ -469,7 +487,7 @@ table.footer .footer-mb {
   }
 
   .socials th {
-    text-align: left;
+    text-align: left !important;
   }
 
   .header .header-logo {
@@ -483,5 +501,23 @@ table.footer .footer-mb {
   .mail-regards-logo {
     width: 107px !important;
     height: 32px !important;
+  }
+
+  .h1 {
+    font-size: 32px !important;
+    line-height: 40px !important;
+  }
+
+  .testibox {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .main-body table.container {
+    padding: 40px 24px !important;
+  }
+
+  .sanfam {
+    margin-top: 32px !important;
   }
 }
