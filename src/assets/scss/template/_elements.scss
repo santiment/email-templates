@@ -1,9 +1,9 @@
 .pb-0 {
-  padding-bottom: 0;
+  padding-bottom: 0 !important;
 }
 
 .m-0 {
-  margin: 0;
+  margin: 0 !important;
 }
 
 .pr-24 {
@@ -46,8 +46,16 @@
   margin-left: 12px;
 }
 
-.header-logo {
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.header .header-logo {
   width: 128px !important;
   height: 24px !important;
-  margin: 0 auto;
+  margin: 48px auto 56px auto;
+}
+
+.d-block {
+  display: block;
 }

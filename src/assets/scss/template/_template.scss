@@ -140,8 +140,20 @@ table.button table td a {
 }
 
 .social {
-  height: 13px;
-  float: right;
+  display: inline-block;
+}
+
+.social:not(:last-child) {
+  margin-right: 12px;
+}
+
+.social img {
+  width: 32px;
+  height: 32px;
+}
+
+.socials th {
+  text-align: right;
 }
 
 table.button.facebook table td {
@@ -231,12 +243,41 @@ a {
   margin-bottom: 4px;
 }
 
+table.footer {
+  margin-bottom: 48px;
+}
+
+table.footer .footer-mb {
+  margin-bottom: 24px;
+}
+
+.footer .radius {
+  padding: 32px 48px;
+}
+
+.footer .footer-logo {
+  width: 96px;
+  height: 18px;
+}
+
+.footer p {
+  max-width: 504px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  white-space: pre-line;
+}
+
 .footer a, .footer a .small {
   border-bottom: none;
 }
 
 .footer a .small, .underline{
   border-bottom: 1px solid #7A859E;
+}
+
+.footer .collapse a {
+  text-align: right;
 }
 
 .signal img {
@@ -380,10 +421,6 @@ a {
     padding: 0 !important;
   }
 
-  .body-1, .body-2 {
-      font-size: 18px !important;
-  }
-
   table.button table td a {
       display: block !important;
       text-align: center !important;
@@ -396,6 +433,33 @@ a {
       font-size: 16px !important;
       line-height: 24px !important;
   }
+  
+  .footer .radius {
+    padding: 40px 24px;
+  }
+  
+  .footer .footer-logo {
+    margin-bottom: 24px;
+  }
+
+  table.footer .footer-mb {
+    margin-bottom: 32px;
+  }
+
+  .footer p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    white-space: initial;
+  }
+
+  .footer .collapse span {
+    margin-bottom: 6px;
+  }
+
+  .footer .collapse a {
+    text-align: left;
+  }
 
   img.mail-list-check {
       height: 21px !important;
@@ -405,14 +469,15 @@ a {
       max-width: 400px !important;
   }
 
-  body, table.body, p, td, th {
-      font-weight: 400 !important;
-      font-size: 18px !important;
-      line-height: 24px !important;
+  .socials th {
+    text-align: left;
   }
 
-  .social {
-      height: 32px !important;
-      float: none !important;
+  .header .header-logo {
+    margin: 40px auto !important;
+  }
+
+  table.body .container {
+    width: 100% !important;
   }
 }
