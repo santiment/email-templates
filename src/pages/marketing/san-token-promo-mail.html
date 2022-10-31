@@ -1,0 +1,58 @@
+---
+layout: mail-layout
+subject: Welcome to Sanbase
+image-url: https://api.santiment.net/images/emails/
+---
+
+<container class="radius san-token">
+    <row class="collapse">
+        <columns small="12">
+            <img src="{{image-url}}san-token-promo-banner.jpg" alt="san token promo banner" class="san-token-promo"/>
+            <h2 class="h2 mb-24 c-rhino">Hi, [[data:firstname:"SanFam!"]]</h2>
+            <p class="c-rhino">
+                We are glad to announce that we are opening new ways to access on-chain, social and financial data as we are shifting into a Web 3.0 platform for decentralized value creation. Soon, you’ll be able to build charts, generate insights and share your discoveries with the Santiment community using the <a href="https://academy.santiment.net/san-tokens" target="_blank">Santiment token (SAN)</a>. 
+            </p>
+            <p class="c-rhino">
+                But every big journey begins with a small step. You can start using SAN tokens and get benefits already now, while we are iterating on this transition towards Web 3.0 aka ownership economy.
+            </p>
+            <div class="mb-16 c-rhino benefit-title">
+                Here are all the benefits we are providing to our SAN token holders now:
+            </div>
+            <div class="san-benefits">
+                <div class="benefit">
+                    <div class="img-hold">
+                        <img src="{{image-url}}check2.png" alt="Check">
+                    </div>
+                    <div class="c-rhino">20% discount on PRO plans for holding 1,000+ SANs</div>
+                    <div class="clear-both"></div>
+                </div>
+                <div class="benefit">
+                    <div class="img-hold">
+                        <img src="{{image-url}}check2.png" alt="Check">
+                    </div>
+                    <div class="c-rhino">50% discount for paying your subscription by burning SAN Tokens</div>
+                    <div class="clear-both"></div>
+                </div>
+                <div class="benefit">
+                    <div class="img-hold">
+                        <img src="{{image-url}}check2.png" alt="Check">
+                    </div>
+                    <div class="c-rhino">Free access to Sanbase for providing 3,000+ SANs to Uniswap liquidity pool</div>
+                    <div class="clear-both"></div>
+                </div>
+            </div>
+            <div class="mb-24">
+                <button class="radius" href="https://academy.santiment.net/san-tokens/san-tokens-holding-benefits/" target="_blank">
+                    <span >Learn about SAN token benefits</span>
+                </button>
+            </div>
+            <p class="m-0 c-rhino">
+                Do you still have some questions about SAN or anything else, don't hesitate to contact us, <a href="mailto:support@santiment.net">support@santiment.net</a>
+            </p>
+
+            {{> san-fam-regards}}
+        </columns>
+    </row>
+</container>
+
+{{> mail-footer-marketing}}

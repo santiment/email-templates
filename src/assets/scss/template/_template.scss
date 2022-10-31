@@ -120,7 +120,6 @@ table.button.radius table td {
 
 .mail-regards-logo {
   width: 88px;
-  height: 24px;
   margin-top: 8px;
 }
 
@@ -130,7 +129,6 @@ table.button {
 
 table.button table td a {
   font-weight: 400;
-  font-size: 16px;
   line-height: 24px;
   color: #FFFFFF;
   text-decoration: none;
@@ -150,8 +148,8 @@ table.button table td a {
 }
 
 .social img {
-  width: 32px;
-  height: 32px;
+  width: 40px !important;
+  height: 40px !important;
 }
 
 .socials th {
@@ -223,7 +221,6 @@ table.button.google table td {
 
 a {
   color: #14c393;
-  text-decoration:none;
 }
 
 .gray-border {
@@ -254,6 +251,12 @@ table.footer .footer-mb {
   margin-bottom: 24px;
 }
 
+.footer {
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  line-height: 20px !important;
+}
+
 .footer .radius {
   padding: 32px 48px;
 }
@@ -265,9 +268,6 @@ table.footer .footer-mb {
 
 .footer p {
   max-width: 504px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
   white-space: pre-line;
 }
 
@@ -346,7 +346,7 @@ table.footer .footer-mb {
 }
 
 .infotd {
-  padding: 0 26px 0 13px;
+  padding: 20px 26px 20px 13px;
 }
 
 .infoimg {
@@ -354,6 +354,14 @@ table.footer .footer-mb {
   vertical-align: middle;
   text-align: center;
   width: 25% !important;
+}
+
+.infoimg img {
+  width: 90px !important;
+}
+
+.singsheetimg {
+  width: 456px;
 }
 
 .quote {
@@ -408,7 +416,66 @@ table.footer .footer-mb {
 }
 
 .sanfam {
-  margin-top: 40px;
+  margin-top: 32px;
+}
+
+.sanfam span {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.san-token-promo {
+  max-width: 352px;
+  text-align: center;
+  margin: 0px auto 32px;
+}
+
+.san-benefits {
+  margin-bottom: 24px;
+}
+
+.san-benefits div.benefit {
+  margin-bottom: 8px;
+}
+
+.san-benefits .img-hold {
+  padding: 4px;
+  float: left;
+}
+
+.san-benefits img {
+  width: 16px !important;
+}
+
+.san-benefits div.c-rhino {
+  font-size: 16px;
+  line-height: 24px;
+  float: right;
+  width: calc(100% - 28px);
+}
+
+.clear-both {
+  clear: both;
+}
+
+.benefit-title {
+  margin-top: 24px;
+  font-weight: 550;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.unsub {
+  margin-bottom: 24px;
+}
+
+.unsub a {
+  color: #7A859E !important;
+}
+
+.san-token p {
+  font-size: 16px;
+  line-height: 24px;
 }
 
 @media (max-width:#{$global-breakpoint}) {
@@ -441,12 +508,6 @@ table.footer .footer-mb {
       padding: 12px 20px !important;
   }
 
-  .footer span.body-2 {
-      font-weight: 400 !important;
-      font-size: 16px !important;
-      line-height: 24px !important;
-  }
-  
   .footer .radius {
     padding: 40px 24px !important;
   }
@@ -456,7 +517,7 @@ table.footer .footer-mb {
   }
 
   table.footer {
-    margin-top: 0 !important;
+    margin-top: 16px !important;
   }
 
   table.footer .footer-mb {
@@ -464,9 +525,6 @@ table.footer .footer-mb {
   }
 
   .footer p {
-    font-weight: 400 !important;
-    font-size: 16px !important;
-    line-height: 24px !important;
     white-space: normal !important;
   }
 
@@ -500,7 +558,6 @@ table.footer .footer-mb {
 
   .mail-regards-logo {
     width: 107px !important;
-    height: 32px !important;
   }
 
   .h1 {
@@ -518,6 +575,59 @@ table.footer .footer-mb {
   }
 
   .sanfam {
+    margin-top: 40px !important;
+  }
+
+  .sanfam span {
+    font-size: 18px !important;
+    line-height: 28px !important;
+  }
+
+  .body-2 {
+    font-size: 18px !important;
+    line-height: 28px !important;
+  }
+
+  p.body-2 {
+    margin-bottom: 32px !important;
+  }
+
+  .body-highlight {
+    font-size: 18px !important;
+    line-height: 26px !important;
+  }
+
+  .san-benefits {
+    margin-bottom: 32px !important;
+  }
+
+  .san-benefits div.benefit {
+    margin-bottom: 10px !important;
+  }
+
+  .san-benefits div.c-rhino {
+    font-size: 18px !important;
+    line-height: 28px !important;
+  }
+
+  .benefit-title {
     margin-top: 32px !important;
+    font-size: 18px !important;
+    line-height: 26px !important;
+  }
+
+  .unsub {
+    margin-bottom: 32px !important;
+  }
+
+  .footer, .footer p, .footer td, .footer th {
+    font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  .san-token p {
+    font-size: 18px !important;
+    line-height: 28px !important;
+    margin-bottom: 32px !important;
   }
 }
