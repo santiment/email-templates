@@ -1,0 +1,70 @@
+---
+layout: mail-layout
+subject: Welcome to Sanbase
+image-url: https://api.santiment.net/images/emails/
+---
+
+<container class="radius san-token">
+    <row class="collapse">
+        <columns small="12">
+            <img src="{{image-url}}sanrmask.png" alt="sanr mask" class="san-token-promo" />
+            <h2 class="h2 mb-24 c-rhino">Hello [[data:firstname:"SanFam!"]]</h2>
+            <p class="c-rhino mb-40">
+                We would like to introduce <b>SanR - Santiment’s new game for traders</b>, where you can practice your
+                trading decisions and earn SAN tokens and NFTs. You can also see what other participants are doing and
+                get interesting trading ideas.
+            </p>
+            <h4 class="h4 font-bolder">Here are a few benefits of joining SanR: 👇🏻</h4>
+            <div class="san-benefits">
+                <div class="benefit">
+                    <div class="img-hold">
+                        <img src="{{image-url}}greencheck.png" alt="Check">
+                    </div>
+                    <div class="c-rhino"><b>Hone your instincts</b> in a safe environment</div>
+                    <div class="clear-both"></div>
+                </div>
+                <div class="benefit">
+                    <div class="img-hold">
+                        <img src="{{image-url}}greencheck.png" alt="Check">
+                    </div>
+                    <div class="c-rhino"><b>Study the trading decisions</b> of other participants</div>
+                    <div class="clear-both"></div>
+                </div>
+                <div class="benefit">
+                    <div class="img-hold">
+                        <img src="{{image-url}}greencheck.png" alt="Check">
+                    </div>
+                    <div class="c-rhino"><b>Subscribe to like-minded players</b> and follow their signals</div>
+                    <div class="clear-both"></div>
+                </div>
+                <div class="benefit">
+                    <div class="img-hold">
+                        <img src="{{image-url}}greencheck.png" alt="Check">
+                    </div>
+                    <div class="c-rhino"><b>Build you models</b> based on the crowd sentiment</div>
+                    <div class="clear-both"></div>
+                </div>
+            </div>
+            <div class="mb-48">
+                <button class="radius" href="https://sanr.app/" target="_blank">
+                    <span>Learn more about SanR</span>
+                </button>
+            </div>
+            <h4 class="h4 font-bolder">💰 Stake SAN and earn on your market forecast!</h4>
+            <p class="mb-24 c-rhino">
+                Each epoch we distribute an intelligence staking pool (10% of staked SAN tokens) among participating SAN
+                holders.
+            </p>
+            <div class="greenbox mb-16">
+                <h4 class="body-highlight mb-12 font-bolder">🚀 Be rewarded every time you succeed</h4>
+                <p>
+                    The SanR innovative <b>play-2-earn</b> model helps you improve your trading skills while injecting
+                    some extra motivation to create profitable signals.
+                </p>
+                <a class="body-2" href="https://sanr.app/staking" target="_blank">Learn how to stake SAN here</a>
+            </div>
+        </columns>
+    </row>
+</container>
+
+{{> mail-footer-marketing}}
