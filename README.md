@@ -18,7 +18,7 @@ yarn
 
 `yarn start` - for dev process
 
-`yarn run build` - builds templates HTML with CSS inline and serves changes. Copy-paste result in Mailjet.
+`yarn run build` - builds templates into HTML with CSS inlined and serves changes. Copy-paste result in Mailjet.
 
 ## How to
 
