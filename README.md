@@ -1,6 +1,13 @@
 Santiment email templates (written with Foundation)
 
-### Setup
+## Requirements
+
+Following tools should be pre-installed:
+
+- [Node.js](https://nodejs.org/en/) == v14.x.x – JavaScript runtime environment
+- [yarn](https://classic.yarnpkg.com/en/docs) == v1.x – package manager
+
+## Setup
 
 ```bash
 cd email-templates
@@ -11,7 +18,7 @@ yarn
 
 `yarn start` - for dev process
 
-`yarn run build` to inline CSS into HTML. Copy-paste result in Mailchimp
+`yarn run build` - builds templates into HTML with CSS inlined and serves changes. Copy-paste result in Mailjet.
 
 ## How to
 
