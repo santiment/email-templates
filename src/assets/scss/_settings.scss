@@ -24,7 +24,7 @@ $medium-gray: #7a859e; // --waterloo
 $dark-gray: #7a859e; // --waterloo
 $black: #181b2b; // --mirage
 $white: #ffffff; // --white
-$global-width: 584px;
+$global-width: 600px;
 $global-width-small: 95%;
 $global-gutter: 16px;
 $body-background: $light-gray;
@@ -97,8 +97,12 @@ $stat-font-size: 40px;
 // 5. Button
 // ---------
 
-$button-padding: (default: 8px 20px 8px 20px);
-$button-font-size: (default: 16px);
+$button-padding: (
+	default: 8px 20px 8px 20px
+);
+$button-font-size: (
+	default: 16px
+);
 $button-color: $white;
 $button-color-alt: $medium-gray;
 $button-font-weight: normal;
@@ -133,4 +137,3 @@ $thumbnail-shadow: 0 0 0 1px rgba($black, 0.2);
 $thumbnail-shadow-hover: 0 0 6px 1px rgba($primary-color, 0.5);
 $thumbnail-transition: box-shadow 200ms ease-out;
 $thumbnail-radius: $global-radius;
-
