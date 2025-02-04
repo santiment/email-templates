@@ -1,0 +1,37 @@
+---
+layout: mail-layout
+image-url: https://api.santiment.net/images/emails/
+---
+
+<container class="radius">
+  <row class="collapse">
+    <columns small="12">
+      <h2 class="h2">New Metrics Added</h2>
+
+      <spacer size="8"></spacer>
+
+      <img
+        src="https://production-sanbase-images.s3.amazonaws.com/uploads/b8381cd1dd9309ba98b37bae3c61c948a3eaa3cee7a803eccab65dcdab81ac19_1738670623481_metrics-added.png">
+
+      <spacer size="40"></spacer>
+
+      <p class="jungleinfobox px-32 py-24">
+        Exciting news! The latest update has introduced new metrics: {{{{raw}}}}{{var:metrics_list}}{{{{/raw}}}}. For
+        detailed information, please
+        visit our changelog.
+      </p>
+
+      <spacer size="28"></spacer>
+
+      <button class="radius" href="https://academy.santiment.net/changelog/" target="_blank">
+        <span>Check Changelog</span>
+      </button>
+
+      <spacer size="48"></spacer>
+
+      {{> regards}}
+    </columns>
+  </row>
+</container>
+
+{{> mail-footer-auto}}

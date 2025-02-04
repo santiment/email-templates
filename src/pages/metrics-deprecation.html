@@ -1,0 +1,37 @@
+---
+layout: mail-layout
+image-url: https://api.santiment.net/images/emails/
+---
+
+<container class="radius">
+  <row class="collapse">
+    <columns small="12">
+      <h2 class="h2">Metrics Deprecation Planned</h2>
+
+      <spacer size="8"></spacer>
+
+      <img
+        src="https://production-sanbase-images.s3.amazonaws.com/uploads/5c8dcf4d00db4f1141e99244260c70879b776ccd584903ff664a1d38eb5d9a10_1738671627780_metrics-deprecation.png">
+
+      <spacer size="40"></spacer>
+
+      <p class="greyinfobox px-32 py-24">
+        As part of our efforts to optimize our offerings, we have decided to deprecate the following metrics due to low
+        usage: {{{{raw}}}}{{var:metrics_list}}{{{{/raw}}}}. This change is scheduled to occur on
+        {{{{raw}}}}{{var:scheduled_at}}{{{{/raw}}}}.
+      </p>
+
+      <spacer size="28"></spacer>
+
+      <button class="radius" href="https://academy.santiment.net/changelog/" target="_blank">
+        <span>Check Changelog</span>
+      </button>
+
+      <spacer size="48"></spacer>
+
+      {{> regards}}
+    </columns>
+  </row>
+</container>
+
+{{> mail-footer-auto}}

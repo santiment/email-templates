@@ -1,0 +1,38 @@
+---
+layout: mail-layout
+image-url: https://api.santiment.net/images/emails/
+---
+
+<container class="radius">
+  <row class="collapse">
+    <columns small="12">
+      <h2 class="h2">Metrics Recalculation Scheduled</h2>
+
+      <spacer size="8"></spacer>
+
+      <img
+        src="https://production-sanbase-images.s3.amazonaws.com/uploads/e196f2e9854e2e0930975dd82a993cdb4525acbf3b1ab2e82cc6987bfb013524_1738671375982_metrics-recalculation.png">
+
+      <spacer size="40"></spacer>
+
+      <p class="suninfobox px-32 py-24">
+        To enhance the accuracy of our data, we will be recalculating the following metrics:
+        {{{{raw}}}}{{var:metrics_list}}{{{{/raw}}}}. This recalculation is scheduled for
+        {{{{raw}}}}{{var:scheduled_at}}{{{{/raw}}}} and is expected to take approximately
+        {{{{raw}}}}{{var:duration}}{{{{/raw}}}}.
+      </p>
+
+      <spacer size="28"></spacer>
+
+      <button class="radius" href="https://academy.santiment.net/changelog/" target="_blank">
+        <span>Check Changelog</span>
+      </button>
+
+      <spacer size="48"></spacer>
+
+      {{> regards}}
+    </columns>
+  </row>
+</container>
+
+{{> mail-footer-auto}}
