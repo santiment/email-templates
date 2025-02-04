@@ -237,7 +237,7 @@ a {
   border-bottom: 1px solid #E7EAF3;
 }
 
-.item-desc{
+.item-desc {
   font-size: 14px;
   margin-bottom: 4px;
 }
@@ -271,11 +271,13 @@ table.footer .footer-mb {
   white-space: pre-line;
 }
 
-.footer a, .footer a .small {
+.footer a,
+.footer a .small {
   border-bottom: none;
 }
 
-.footer a .small, .underline{
+.footer a .small,
+.underline {
   border-bottom: 1px solid #7A859E;
 }
 
@@ -342,7 +344,12 @@ table.footer .footer-mb {
 
 .jungleinfobox {
   background: #EDF8F5;
-  border-radius: 8px;  
+  border-radius: 8px;
+}
+
+.greyinfobox {
+  background: #F3F4FA;
+  border-radius: 8px;
 }
 
 .infotd {
@@ -480,38 +487,39 @@ table.footer .footer-mb {
 
 @media (max-width:#{$global-breakpoint}) {
   .small {
-		font-size: 80% !important;
-	}
+    font-size: 80% !important;
+  }
 
   .hidemobile {
-      display: none !important;
+    display: none !important;
   }
 
   .showmobile {
-      display: block !important;
+    display: block !important;
   }
 
   .container {
-      padding-left: 16px !important;
-      padding-right: 16px !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
   }
 
-  table.body .collapse > tbody > tr > .columns, table.body .collapse > tbody > tr > .column {
+  table.body .collapse>tbody>tr>.columns,
+  table.body .collapse>tbody>tr>.column {
     padding: 0 !important;
   }
 
   table.button table td a {
-      display: block !important;
-      text-align: center !important;
-      font-weight: 500 !important;
-      font-size: 18px !important;
-      padding: 12px 20px !important;
+    display: block !important;
+    text-align: center !important;
+    font-weight: 500 !important;
+    font-size: 18px !important;
+    padding: 12px 20px !important;
   }
 
   .footer .radius {
     padding: 40px 24px !important;
   }
-  
+
   .footer .footer-logo {
     margin-bottom: 24px !important;
   }
@@ -537,11 +545,11 @@ table.footer .footer-mb {
   }
 
   img.mail-list-check {
-      height: 21px !important;
+    height: 21px !important;
   }
 
   .mail-list span {
-      max-width: 400px !important;
+    max-width: 400px !important;
   }
 
   .socials th {
@@ -620,7 +628,10 @@ table.footer .footer-mb {
     margin-bottom: 32px !important;
   }
 
-  .footer, .footer p, .footer td, .footer th {
+  .footer,
+  .footer p,
+  .footer td,
+  .footer th {
     font-size: 16px !important;
     line-height: 24px !important;
   }
