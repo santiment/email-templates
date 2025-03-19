@@ -106,6 +106,31 @@ table.button.radius table td {
   margin-left: 0;
 }
 
+
+.mail-list.arrow-list li {
+  list-style-type: '→';
+  list-style-position: outside;
+  display: list-item;
+  margin-left: 1em;
+  height: unset;
+
+  &::marker {
+    color: $primary-color;
+  }
+}
+
+
+.mail-list.arrow-list {
+
+  li>a,
+  li>span {
+    height: auto;
+    display: block;
+    text-decoration: none;
+    padding-left: 8px;
+  }
+}
+
 .mail-list span {
   height: 24px;
   display: table-cell;
@@ -116,6 +141,15 @@ table.button.radius table td {
   height: 16px;
   padding-top: 4px;
   margin-right: 12px;
+}
+
+.plain-list {
+  padding-left: 1.5em;
+  margin: 0;
+
+  a {
+    color: $black;
+  }
 }
 
 .mail-regards-logo {
@@ -137,6 +171,12 @@ table.button table td a {
   padding: 8px 20px;
   border: 0 solid #14c393;
   border-radius: 6px;
+}
+
+table.button.ghost table td a {
+  color: #2F354D !important;
+  background-color: #FFFFFF;
+  border: 1px solid #E7EAF3;
 }
 
 .social {
@@ -221,6 +261,14 @@ table.button.google table td {
 
 a {
   color: #14c393;
+}
+
+.subtle-link {
+  color: $black;
+
+  &:hover {
+    color: $black;
+  }
 }
 
 .gray-border {
@@ -339,17 +387,17 @@ table.footer .footer-mb {
 
 .suninfobox {
   background: #FFF5DA;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
 .jungleinfobox {
   background: #EDF8F5;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
 .greyinfobox {
   background: #F3F4FA;
-  border-radius: 8px;
+  border-radius: 6px;
 }
 
 .infotd {
@@ -594,10 +642,6 @@ table.footer .footer-mb {
   .body-2 {
     font-size: 18px !important;
     line-height: 28px !important;
-  }
-
-  p.body-2 {
-    margin-bottom: 32px !important;
   }
 
   .body-highlight {
