@@ -113,12 +113,22 @@ table.button.radius table td {
   display: list-item;
   margin-left: 1em;
   height: unset;
+
+  &::marker {
+    color: $primary-color;
+  }
 }
 
-.mail-list.arrow-list li>a {
-  display: block;
-  text-decoration: none;
-  padding-left: 8px;
+
+.mail-list.arrow-list {
+
+  li>a,
+  li>span {
+    height: auto;
+    display: block;
+    text-decoration: none;
+    padding-left: 8px;
+  }
 }
 
 .mail-list span {
@@ -131,6 +141,15 @@ table.button.radius table td {
   height: 16px;
   padding-top: 4px;
   margin-right: 12px;
+}
+
+.plain-list {
+  padding-left: 1.5em;
+  margin: 0;
+
+  a {
+    color: $black;
+  }
 }
 
 .mail-regards-logo {
