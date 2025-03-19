@@ -263,6 +263,14 @@ a {
   color: #14c393;
 }
 
+.subtle-link {
+  color: $black;
+
+  &:hover {
+    color: $black;
+  }
+}
+
 .gray-border {
   border-radius: 4px;
   border: 1px solid #E7EAF3;
