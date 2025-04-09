@@ -260,14 +260,18 @@ table.button.google table td {
 }
 
 a {
-  color: #14c393;
+  color: $green;
+
+  &:hover {
+    color: $green-hover;
+  }
 }
 
 .subtle-link {
   color: $black;
 
   &:hover {
-    color: $black;
+    color: $green;
   }
 }
 
