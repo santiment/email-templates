@@ -5,29 +5,58 @@ image-url: https://api.santiment.net/images/emails/
 ---
 
 <container class="radius">
-    <row class="collapse">
-        <columns small="12">
-            <span class="h1 c-black">🛑 You’ve canceled your {{{{raw}}}}{{var:subscription_type}}{{{{/raw}}}}</span>
+  <row class="collapse">
+    <columns small="12">
+      <span class="h2 c-rhino">Your PRO subscription has ended</span>
 
-            <spacer size="24"></spacer>
+      <spacer size="24"></spacer>
 
-            <p class="body-1 c-black m-0">
-                Your {{{{raw}}}}{{var:subscription_type}}{{{{/raw}}}} subscription is active until <span class="txt-m">{{{{raw}}}}{{var:subscription_enddate}}{{{{/raw}}}}</span>
-            </p>
+      <span class="body-2 c-rhino">
+        Hi, there
+      </span>
 
-            <spacer size="48"></spacer>
+      <spacer size="12"></spacer>
 
-            {{> pro-perks}}
+      <span class="body-2 c-rhino">
+        Thank you for spending time with us as a PRO subscriber. We truly appreciate your trust and the time you chose
+        to invest in Sanbase.
+      </span>
 
-            <spacer size="24"></spacer>
+      <spacer size="12"></spacer>
 
-            <button class="radius" href="https://app.santiment.net/pricing" target="_blank">
-                <span>Renew Your Subscribtion Now</span>
-            </button>
+      <span class="body-2 c-rhino">
+        Your PRO subscription is active until
+        <b>{{{{raw}}}}{{var:subscription_enddate}}{{{{/raw}}}}</b>.
+        After that, your account will continue on our free plan, which means it will no longer include the PRO perks you
+        previously had access to, such as:
+      </span>
 
-            {{> san-fam-regards}}
-        </columns>
-    </row>
+      <spacer size="48"></spacer>
+
+      <span class="h3 c-rhino">What you’ll miss from PRO: 👇🏻</span>
+
+      {{> pro-perks}}
+
+      <spacer size="16"></spacer>
+
+      <span class="body-2 c-rhino">
+        If you’d like to continue with any of these features or explore alternatives, you can take a look at the plans
+        we
+        currently offer.
+      </span>
+
+      <spacer size="32"></spacer>
+
+      <button class="radius" href="https://app.santiment.net/pricing" target="_blank">
+        <span>See Different Plans</span>
+      </button>
+
+      <div class="sanfam">
+        <span class="c-rhino m-0">Thank you again for being part of Santiment.</span>
+        <img src="{{image-url}}logo-fam.png" alt="SanFam" class="mail-regards-logo">
+      </div>
+    </columns>
+  </row>
 </container>
 
 {{> mail-footer-auto}}

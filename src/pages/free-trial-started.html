@@ -5,33 +5,37 @@ image-url: https://api.santiment.net/images/emails/
 ---
 
 <container class="radius">
-    <row class="collapse">
-        <columns small="12">
-            <span  class="h1 c-black">✨ Enjoy your free trial!</span>
+  <row class="collapse">
+    <columns small="12">
+      <span class="h1 c-black">✨ Enjoy your free trial!</span>
 
-            <spacer size="24"></spacer>
+      <spacer size="24"></spacer>
 
-            <p  class="body-1 c-black m-0">
-                Hey, {{{{raw}}}}{{var:username}}{{{{/raw}}}}<br />
-                <br />
-                We have upgraded your account to <b>{{{{raw}}}}{{var:subscription_type}}{{{{/raw}}}}</b> for the next <b>14 days</b>.<br />
-                <br />
-                Enjoy all extra features Sanbase currently provides. As a new user we want you to see everything we have to offer.
-            </p>
+      <p class="body-1 c-black m-0">
+        Hey, {{{{raw}}}}{{var:username}}{{{{/raw}}}}<br />
+        <br />
+        We have upgraded your account to <b>{{{{raw}}}}{{var:subscription_type}}{{{{/raw}}}}</b> for the next <b>14
+          days</b>.<br />
+        <br />
+        Enjoy all extra features Sanbase currently provides. As a new user we want you to see everything we have to
+        offer.
+      </p>
 
-            <spacer size="48"></spacer>
+      <spacer size="48"></spacer>
 
-            {{> pro-perks}}
+      <span class="h3 c-rhino">Our PRO subscriber perks: 👇🏻</span>
 
-            <spacer size="24"></spacer>
+      {{> pro-perks}}
 
-            <button class="radius" href="https://app.santiment.net" target="_blank">
-                <span >Go to Sanbase</span>
-            </button>
+      <spacer size="24"></spacer>
 
-            {{> san-fam-regards}}
-        </columns>
-    </row>
+      <button class="radius" href="https://app.santiment.net" target="_blank">
+        <span>Go to Sanbase</span>
+      </button>
+
+      {{> san-fam-regards}}
+    </columns>
+  </row>
 </container>
 
 {{> mail-footer-auto}}
